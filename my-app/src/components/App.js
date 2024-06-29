@@ -1,10 +1,35 @@
 import "bootstrap/dist/css/bootstrap.min.css"
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import Navigation from "./Navigation"
+import Coffee from "./Coffee"
 
 import React from "react"
 
+function Home() {
+  return <h2>Welcome!</h2>
+}
+function Equipment() {
+  return <h2>Equipment</h2>
+}
+
+function Apparel() {
+  return <h2>Apparel</h2>
+}
+
 function App() {
-  return <Navigation />
+  return (
+    <Router>
+      <div>
+        <Navigation />
+        <Routes>
+          <Route path="/coffee" element={<Coffee />} />
+          <Route path="/equipment" element={<Equipment />} />
+          <Route path="/apparel" element={<Apparel />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
+    </Router>
+  )
 }
 
 export default App
