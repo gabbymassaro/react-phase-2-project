@@ -12,11 +12,14 @@ function CoffeeList() {
   }, [])
 
   return (
-    <Row xs={1} md={2} className="g-4">
-      {listings.map((listing) => (
-        <CoffeeCard key={listing.id} listing={listing} />
-      ))}
-    </Row>
+    <>
+      <h1>Coffee</h1>
+      <Row xs={1} md={2} className="g-4">
+        {listings.map((listing) => (
+          <CoffeeCard key={listing.id} listing={listing} />
+        ))}
+      </Row>
+    </>
   )
 }
 
