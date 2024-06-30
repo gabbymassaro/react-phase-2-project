@@ -1,454 +1,256 @@
 {
   "items": [
     {
-      "id": 1,
-      "brand-name": "Starbucks",
-      "category": "coffee",
-      "description": "Whole bean coffee beans, dark roast, 1lb",
-      "image": "./images/aloe.jpg",
-      "price": 15.99,
-      "in-stock-qty": 5
-    },
-    {
       "id": 2,
-      "brand-name": "Breville",
+      "brand_name": "Breville",
       "category": "equipment",
       "description": "Breville Barista Express Espresso Machine",
-      "image": "./images/breville.jpg",
+      "image": "https://m.media-amazon.com/images/I/71BvCt6eAFL._AC_UL320_.jpg",
       "price": 699.99,
-      "in-stock-qty": 2
+      "in_stock_qty": 2
     },
     {
       "id": 3,
-      "brand-name": "Lavazza",
+      "brand_name": "Lavazza",
       "category": "coffee",
       "description": "Lavazza Super Crema Whole Bean Coffee Blend, 2.2lb",
-      "image": "./images/lavazza.jpg",
+      "image": "https://m.media-amazon.com/images/I/51MMPznBM1L._AC_UL320_.jpg",
       "price": 23.99,
-      "in-stock-qty": 10
+      "in_stock_qty": 10
     },
     {
       "id": 4,
-      "brand-name": "Hario",
+      "brand_name": "Hario",
       "category": "equipment",
       "description": "Hario V60 Ceramic Coffee Dripper",
-      "image": "./images/hario.jpg",
+      "image": "https://m.media-amazon.com/images/I/51Wp-8q4A7L._AC_UL320_.jpg",
       "price": 19.99,
-      "in-stock-qty": 15
+      "in_stock_qty": 15
     },
     {
       "id": 5,
-      "brand-name": "Peet's Coffee",
+      "brand_name": "Peet's Coffee",
       "category": "coffee",
       "description": "Peet's Coffee Major Dickason's Blend, Dark Roast, 1lb",
-      "image": "./images/peets.jpg",
+      "image": "https://m.media-amazon.com/images/I/61n2JBS4HfL._AC_UL320_.jpg",
       "price": 13.99,
-      "in-stock-qty": 8
+      "in_stock_qty": 8
     },
     {
       "id": 6,
-      "brand-name": "Nespresso",
+      "brand_name": "Nespresso",
       "category": "equipment",
       "description": "Nespresso VertuoPlus Coffee and Espresso Maker",
-      "image": "./images/nespresso.jpg",
+      "image": "https://m.media-amazon.com/images/I/71zI-ry-gXL._AC_UL320_.jpg",
       "price": 149.99,
-      "in-stock-qty": 7
+      "in_stock_qty": 7
     },
     {
       "id": 7,
-      "brand-name": "Death Wish Coffee",
+      "brand_name": "Death Wish Coffee",
       "category": "coffee",
       "description": "Death Wish Coffee Co. Whole Bean Coffee, 1lb",
-      "image": "./images/deathwish.jpg",
+      "image": "https://m.media-amazon.com/images/I/61+OtZZtI4L._AC_UL320_.jpg",
       "price": 19.99,
-      "in-stock-qty": 12
+      "in_stock_qty": 12
     },
     {
       "id": 8,
-      "brand-name": "Chemex",
+      "brand_name": "Chemex",
       "category": "equipment",
       "description": "Chemex Pour-Over Glass Coffeemaker",
-      "image": "./images/chemex.jpg",
+      "image": "https://m.media-amazon.com/images/I/51rEZwQAmqL._AC_UL320_.jpg",
       "price": 44.99,
-      "in-stock-qty": 5
+      "in_stock_qty": 5
     },
     {
       "id": 9,
-      "brand-name": "Blue Bottle",
+      "brand_name": "Blue Bottle",
       "category": "coffee",
       "description": "Blue Bottle Coffee, Bella Donovan, Whole Bean, 12oz",
-      "image": "./images/bluebottle.jpg",
+      "image": "https://m.media-amazon.com/images/I/31vGBP7UAoL._AC_UL320_.jpg",
       "price": 18.99,
-      "in-stock-qty": 6
+      "in_stock_qty": 6
     },
     {
       "id": 10,
-      "brand-name": "AeroPress",
+      "brand_name": "AeroPress",
       "category": "equipment",
       "description": "AeroPress Coffee and Espresso Maker",
-      "image": "./images/aeropress.jpg",
+      "image": "https://m.media-amazon.com/images/I/51mfYNtRCbL._AC_UL320_.jpg",
       "price": 29.95,
-      "in-stock-qty": 9
+      "in_stock_qty": 9
     },
     {
       "id": 11,
-      "brand-name": "Caribou Coffee",
+      "brand_name": "Caribou Coffee",
       "category": "coffee",
       "description": "Caribou Coffee, Caribou Blend, Medium Roast, 12oz",
-      "image": "./images/caribou.jpg",
+      "image": "https://m.media-amazon.com/images/I/710vlkmq6wL._AC_UL320_.jpg",
       "price": 9.99,
-      "in-stock-qty": 4
+      "in_stock_qty": 4
     },
     {
       "id": 12,
-      "brand-name": "Mr. Coffee",
+      "brand_name": "Mr. Coffee",
       "category": "equipment",
       "description": "Mr. Coffee 12-Cup Coffee Maker",
-      "image": "./images/mrcoffee.jpg",
+      "image": "https://m.media-amazon.com/images/I/71ZIcTLsheL._AC_UL320_.jpg",
       "price": 24.99,
-      "in-stock-qty": 10
+      "in_stock_qty": 10
     },
     {
       "id": 13,
-      "brand-name": "Stumptown",
+      "brand_name": "Stumptown",
       "category": "coffee",
       "description": "Stumptown Coffee Roasters, Hair Bender, Whole Bean, 12oz",
-      "image": "./images/stumptown.jpg",
+      "image": "https://m.media-amazon.com/images/I/71Q129rCmuL._AC_UL320_.jpg",
       "price": 16.99,
-      "in-stock-qty": 7
+      "in_stock_qty": 7
     },
     {
       "id": 14,
-      "brand-name": "Keurig",
+      "brand_name": "Keurig",
       "category": "equipment",
       "description": "Keurig K-Classic Coffee Maker",
-      "image": "./images/keurig.jpg",
+      "image": "https://m.media-amazon.com/images/I/61wQb8IB8UL._AC_UL320_.jpg",
       "price": 89.99,
-      "in-stock-qty": 3
+      "in_stock_qty": 3
     },
     {
       "id": 15,
-      "brand-name": "Intelligentsia",
+      "brand_name": "Intelligentsia",
       "category": "coffee",
       "description": "Intelligentsia Coffee, Black Cat Classic Espresso, Whole Bean, 12oz",
-      "image": "./images/intelligentsia.jpg",
+      "image": "https://m.media-amazon.com/images/I/61ljzJa9oAL._AC_UL320_.jpg",
       "price": 16.00,
-      "in-stock-qty": 6
+      "in_stock_qty": 6
     },
     {
       "id": 16,
-      "brand-name": "OXO",
+      "brand_name": "OXO",
       "category": "equipment",
       "description": "OXO Brew 9 Cup Coffee Maker",
-      "image": "./images/oxo.jpg",
+      "image": "https://m.media-amazon.com/images/I/71dxDL0TaIL._AC_UL320_.jpg",
       "price": 199.99,
-      "in-stock-qty": 2
+      "in_stock_qty": 2
     },
     {
       "id": 17,
-      "brand-name": "Dunkin'",
+      "brand_name": "Dunkin'",
       "category": "coffee",
       "description": "Dunkin' Original Blend Medium Roast Coffee, 1lb",
-      "image": "./images/dunkin.jpg",
+      "image": "https://m.media-amazon.com/images/I/51+uDsp65dL._AC_UL320_.jpg",
       "price": 8.99,
-      "in-stock-qty": 20
+      "in_stock_qty": 20
     },
     {
       "id": 18,
-      "brand-name": "Cuisinart",
+      "brand_name": "Cuisinart",
       "category": "equipment",
       "description": "Cuisinart DCC-3200P1 Perfectemp Coffee Maker",
-      "image": "./images/cuisinart.jpg",
+      "image": "https://m.media-amazon.com/images/I/81ugZ2peAgL._AC_UL320_.jpg",
       "price": 99.95,
-      "in-stock-qty": 4
+      "in_stock_qty": 4
     },
     {
       "id": 19,
-      "brand-name": "Philz Coffee",
+      "brand_name": "Philz Coffee",
       "category": "coffee",
       "description": "Philz Coffee, Tesora Blend, Whole Bean, 1lb",
-      "image": "./images/philz.jpg",
+      "image": "https://m.media-amazon.com/images/I/31R5BZCqcvL._AC_UL320_.jpg",
       "price": 19.95,
-      "in-stock-qty": 8
+      "in_stock_qty": 8
     },
     {
       "id": 20,
-      "brand-name": "DeLonghi",
+      "brand_name": "DeLonghi",
       "category": "equipment",
       "description": "DeLonghi EC155 15 BAR Pump Espresso and Cappuccino Maker",
-      "image": "./images/delonghi.jpg",
+      "image": "https://m.media-amazon.com/images/I/61ePiOAtrvL._AC_UL320_.jpg",
       "price": 99.95,
-      "in-stock-qty": 5
+      "in_stock_qty": 5
     },
     {
       "id": 21,
-      "brand-name": "Gevalia",
+      "brand_name": "Gevalia",
       "category": "coffee",
       "description": "Gevalia House Blend Medium Roast Coffee, 1lb",
-      "image": "./images/gevalia.jpg",
+      "image": "https://m.media-amazon.com/images/I/71ZGUXLpwML._AC_UL320_.jpg",
       "price": 9.99,
-      "in-stock-qty": 12
+      "in_stock_qty": 12
     },
     {
       "id": 22,
-      "brand-name": "Hamilton Beach",
+      "brand_name": "Hamilton Beach",
       "category": "equipment",
       "description": "Hamilton Beach FlexBrew Single Serve Coffee Maker",
-      "image": "./images/hamilton.jpg",
+      "image": "https://m.media-amazon.com/images/I/61nCUc7yCgL._AC_UL320_.jpg",
       "price": 49.99,
-      "in-stock-qty": 6
+      "in_stock_qty": 6
     },
     {
       "id": 23,
-      "brand-name": "Seattle's Best",
+      "brand_name": "Seattle's Best",
       "category": "coffee",
       "description": "Seattle's Best Coffee, Post Alley Blend, 1lb",
-      "image": "./images/seattle.jpg",
+      "image": "https://m.media-amazon.com/images/I/71speMYV5UL._AC_UL320_.jpg",
       "price": 8.49,
-      "in-stock-qty": 10
+      "in_stock_qty": 10
     },
     {
       "id": 24,
-      "brand-name": "Zojirushi",
+      "brand_name": "Zojirushi",
       "category": "equipment",
       "description": "Zojirushi EC-DAC50 Zutto 5-Cup Drip Coffeemaker",
-      "image": "./images/zojirushi.jpg",
+      "image": "https://m.media-amazon.com/images/I/71mVeg95MxL._AC_UL320_.jpg",
       "price": 72.99,
-      "in-stock-qty": 3
+      "in_stock_qty": 3
     },
     {
       "id": 25,
-      "brand-name": "Peet's Coffee",
+      "brand_name": "Peet's Coffee",
       "category": "coffee",
       "description": "Peet's Coffee, French Roast, Dark Roast, 1lb",
-      "image": "./images/peets_french.jpg",
+      "image": "https://m.media-amazon.com/images/I/61Ql2mABrfL._AC_UL320_.jpg",
       "price": 13.99,
-      "in-stock-qty": 7
+      "in_stock_qty": 7
     },
     {
       "id": 26,
-      "brand-name": "Technivorm",
+      "brand_name": "Technivorm",
       "category": "equipment",
       "description": "Technivorm Moccamaster 79112 KBT Coffee Brewer",
-      "image": "./images/technivorm.jpg",
+      "image": "https://m.media-amazon.com/images/I/61RbUYu8rcL._AC_UL320_.jpg",
       "price": 309.00,
-      "in-stock-qty": 2
-    },
-    {
-      "id": 27,
-      "brand-name": "Green Mountain Coffee",
-      "category": "coffee",
-      "description": "Green Mountain Coffee Roasters, Breakfast Blend, 1lb",
-      "image": "./images/greenmountain.jpg",
-      "price": 10.99,
-      "in-stock-qty": 14
+      "in_stock_qty": 2
     },
     {
       "id": 28,
-      "brand-name": "Bodum",
+      "brand_name": "Smeg",
       "category": "equipment",
-      "description": "Bodum Chambord French Press Coffee Maker",
-      "image": "./images/bodum.jpg",
-      "price": 34.99,
-      "in-stock-qty": 8
+      "description": "Smeg 50's Retro Style Aesthetic Drip Filter Coffee Machine",
+      "image": "https://m.media-amazon.com/images/I/51Mhz8zDVbL._AC_UL320_.jpg",
+      "price": 199.95,
+      "in_stock_qty": 4
     },
     {
       "id": 29,
-      "brand-name": "Lavazza",
+      "brand_name": "Bones Coffee",
       "category": "coffee",
-      "description": "Lavazza Gran Espresso Whole Bean Coffee Blend, 2.2lb",
-      "image": "./images/lavazza_gran.jpg",
-      "price": 24.99,
-      "in-stock-qty": 11
+      "description": "Bones Coffee Company, Maple Bacon, Whole Bean, 1lb",
+      "image": "https://m.media-amazon.com/images/I/71gM2UWsIoL._AC_UL320_.jpg",
+      "price": 17.99,
+      "in_stock_qty": 6
     },
     {
       "id": 30,
-      "brand-name": "Gaggia",
+      "brand_name": "Ninja",
       "category": "equipment",
-      "description": "Gaggia RI9380/46 Classic Pro Espresso Machine",
-      "image": "./images/gaggia.jpg",
-      "price": 449.00,
-      "in-stock-qty": 2
-    },
-    {
-      "id": 31,
-      "brand-name": "Community Coffee",
-      "category": "coffee",
-      "description": "Community Coffee, Signature Blend Dark Roast, 1lb",
-      "image": "./images/community.jpg",
-      "price": 8.49,
-      "in-stock-qty": 12
-    },
-    {
-      "id": 32,
-      "brand-name": "KitchenAid",
-      "category": "equipment",
-      "description": "KitchenAid KCM1208DG Spiral Showerhead 12 Cup Drip Coffee Maker",
-      "image": "./images/kitchenaid.jpg",
-      "price": 99.99,
-      "in-stock-qty": 5
-    },
-    {
-      "id": 33,
-      "brand-name": "Verena Street",
-      "category": "coffee",
-      "description": "Verena Street 2 Pound Whole Bean Coffee, Cow Tipper",
-      "image": "./images/verena.jpg",
-      "price": 16.99,
-      "in-stock-qty": 9
-    },
-    {
-      "id": 34,
-      "brand-name": "EspressoWorks",
-      "category": "equipment",
-      "description": "EspressoWorks All-In-One Espresso Machine & Cappuccino Maker",
-      "image": "./images/espressoworks.jpg",
-      "price": 219.99,
-      "in-stock-qty": 4
-    },
-    {
-      "id": 35,
-      "brand-name": "Koffee Kult",
-      "category": "coffee",
-      "description": "Koffee Kult Dark Roast Coffee Beans, 32oz",
-      "image": "./images/koffeekult.jpg",
-      "price": 19.99,
-      "in-stock-qty": 6
-    },
-    {
-      "id": 36,
-      "brand-name": "Smeg",
-      "category": "equipment",
-      "description": "Smeg Retro Style Aesthetic Drip Filter Coffee Machine",
-      "image": "./images/smeg.jpg",
-      "price": 229.95,
-      "in-stock-qty": 3
-    },
-    {
-      "id": 37,
-      "brand-name": "Coffee Bean Direct",
-      "category": "coffee",
-      "description": "Coffee Bean Direct Italian Roast Espresso, Whole Bean Coffee, 5lb",
-      "image": "./images/coffeebeandirect.jpg",
-      "price": 44.99,
-      "in-stock-qty": 2
-    },
-    {
-      "id": 38,
-      "brand-name": "Café Du Monde",
-      "category": "coffee",
-      "description": "Café Du Monde Coffee Chicory, 15oz",
-      "image": "./images/cafedumonde.jpg",
-      "price": 6.99,
-      "in-stock-qty": 20
-    },
-    {
-      "id": 39,
-      "brand-name": "Ninja",
-      "category": "equipment",
-      "description": "Ninja Specialty Coffee Maker",
-      "image": "./images/ninja.jpg",
-      "price": 169.99,
-      "in-stock-qty": 5
-    },
-    {
-      "id": 40,
-      "brand-name": "Eight O'Clock Coffee",
-      "category": "coffee",
-      "description": "Eight O'Clock Whole Bean Coffee, The Original, 36oz",
-      "image": "./images/eightoclock.jpg",
-      "price": 16.99,
-      "in-stock-qty": 9
-    },
-    {
-      "id": 41,
-      "brand-name": "Wilfa",
-      "category": "equipment",
-      "description": "Wilfa Svart Precision Coffee Maker",
-      "image": "./images/wilfa.jpg",
-      "price": 249.00,
-      "in-stock-qty": 3
-    },
-    {
-      "id": 42,
-      "brand-name": "Kicking Horse Coffee",
-      "category": "coffee",
-      "description": "Kicking Horse Coffee, Kick Ass, Dark Roast, Whole Bean, 35.2oz",
-      "image": "./images/kickinghorse.jpg",
-      "price": 24.99,
-      "in-stock-qty": 6
-    },
-    {
-      "id": 43,
-      "brand-name": "Mueller Austria",
-      "category": "equipment",
-      "description": "Mueller Austria Ultra Brew Thermal Coffee Maker",
-      "image": "./images/mueller.jpg",
-      "price": 59.99,
-      "in-stock-qty": 7
-    },
-    {
-      "id": 44,
-      "brand-name": "Caribou Coffee",
-      "category": "coffee",
-      "description": "Caribou Coffee, Daybreak Morning Blend, Light Roast, 1lb",
-      "image": "./images/caribou_daybreak.jpg",
-      "price": 9.99,
-      "in-stock-qty": 8
-    },
-    {
-      "id": 45,
-      "brand-name": "Nespresso",
-      "category": "equipment",
-      "description": "Nespresso Inissia Espresso Machine",
-      "image": "./images/nespresso_inissia.jpg",
-      "price": 99.00,
-      "in-stock-qty": 4
-    },
-    {
-      "id": 46,
-      "brand-name": "Dunkin'",
-      "category": "coffee",
-      "description": "Dunkin' Decaf Medium Roast Coffee, 1lb",
-      "image": "./images/dunkin_decaf.jpg",
-      "price": 8.99,
-      "in-stock-qty": 15
-    },
-    {
-      "id": 47,
-      "brand-name": "Capresso",
-      "category": "equipment",
-      "description": "Capresso 5-Cup Mini Drip Coffee Maker",
-      "image": "./images/capresso.jpg",
-      "price": 39.99,
-      "in-stock-qty": 6
-    },
-    {
-      "id": 48,
-      "brand-name": "Peet's Coffee",
-      "category": "coffee",
-      "description": "Peet's Coffee, House Blend, Medium Roast, 1lb",
-      "image": "./images/peets_house.jpg",
-      "price": 13.99,
-      "in-stock-qty": 10
-    },
-    {
-      "id": 49,
-      "brand-name": "Hamilton Beach",
-      "category": "equipment",
-      "description": "Hamilton Beach 2-Way Brewer Coffee Maker",
-      "image": "./images/hamilton_2way.jpg",
-      "price": 59.99,
-      "in-stock-qty": 5
-    },
-    {
-      "id": 50,
-      "brand-name": "Starbucks",
-      "category": "coffee",
-      "description": "Starbucks Pike Place Roast, Medium Roast, 1lb",
-      "image": "./images/starbucks_pike.jpg",
-      "price": 14.99,
-      "in-stock-qty": 12
+      "description": "Ninja Hot and Cold Brewed System",
+      "image": "https://m.media-amazon.com/images/I/512uRjQwFIL._AC_UL320_.jpg",
+      "price": 229.99,
+      "in_stock_qty": 3
     }
   ]
 }

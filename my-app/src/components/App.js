@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import Navigation from "./Navigation"
-import Coffee from "./Coffee"
+import CoffeeList from "./CoffeeList"
 
 import React from "react"
 
@@ -22,7 +22,7 @@ function App() {
       <div>
         <Navigation />
         <Routes>
-          <Route path="/coffee" element={<Coffee />} />
+          <Route path="/coffee" element={<CoffeeList />} />
           <Route path="/equipment" element={<Equipment />} />
           <Route path="/apparel" element={<Apparel />} />
           <Route path="/" element={<Home />} />
