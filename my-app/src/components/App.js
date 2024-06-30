@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css"
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Navigation from "./Navigation"
 import CoffeeList from "./CoffeeList"
 
@@ -12,8 +12,8 @@ function Equipment() {
   return <h2>Equipment</h2>
 }
 
-function Apparel() {
-  return <h2>Apparel</h2>
+function Cart() {
+  return <h2>Cart</h2>
 }
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
         <Routes>
           <Route path="/coffee" element={<CoffeeList />} />
           <Route path="/equipment" element={<Equipment />} />
-          <Route path="/apparel" element={<Apparel />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
