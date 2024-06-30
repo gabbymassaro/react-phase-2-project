@@ -4,7 +4,14 @@ import Col from "react-bootstrap/Col"
 import Image from "react-bootstrap/Image"
 
 function CoffeeCard({
-  listing: { brand_name, category, description, image, price, in_stock_qty },
+  coffeeListing: {
+    brand_name,
+    category,
+    description,
+    image,
+    price,
+    in_stock_qty,
+  },
 }) {
   return (
     <Col>

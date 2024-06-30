@@ -1,14 +1,5 @@
 {
-  "items": [
-    {
-      "id": 2,
-      "brand_name": "Breville",
-      "category": "equipment",
-      "description": "Breville Barista Express Espresso Machine",
-      "image": "https://m.media-amazon.com/images/I/71BvCt6eAFL._AC_UL320_.jpg",
-      "price": 699.99,
-      "in_stock_qty": 2
-    },
+  "coffee": [
     {
       "id": 3,
       "brand_name": "Lavazza",
@@ -17,15 +8,6 @@
       "image": "https://m.media-amazon.com/images/I/51MMPznBM1L._AC_UL320_.jpg",
       "price": 23.99,
       "in_stock_qty": 10
-    },
-    {
-      "id": 4,
-      "brand_name": "Hario",
-      "category": "equipment",
-      "description": "Hario V60 Ceramic Coffee Dripper",
-      "image": "https://m.media-amazon.com/images/I/51Wp-8q4A7L._AC_UL320_.jpg",
-      "price": 19.99,
-      "in_stock_qty": 15
     },
     {
       "id": 5,
@@ -37,15 +19,6 @@
       "in_stock_qty": 8
     },
     {
-      "id": 6,
-      "brand_name": "Nespresso",
-      "category": "equipment",
-      "description": "Nespresso VertuoPlus Coffee and Espresso Maker",
-      "image": "https://m.media-amazon.com/images/I/71zI-ry-gXL._AC_UL320_.jpg",
-      "price": 149.99,
-      "in_stock_qty": 7
-    },
-    {
       "id": 7,
       "brand_name": "Death Wish Coffee",
       "category": "coffee",
@@ -53,15 +26,6 @@
       "image": "https://m.media-amazon.com/images/I/61+OtZZtI4L._AC_UL320_.jpg",
       "price": 19.99,
       "in_stock_qty": 12
-    },
-    {
-      "id": 8,
-      "brand_name": "Chemex",
-      "category": "equipment",
-      "description": "Chemex Pour-Over Glass Coffeemaker",
-      "image": "https://m.media-amazon.com/images/I/51rEZwQAmqL._AC_UL320_.jpg",
-      "price": 44.99,
-      "in_stock_qty": 5
     },
     {
       "id": 9,
@@ -73,15 +37,6 @@
       "in_stock_qty": 6
     },
     {
-      "id": 10,
-      "brand_name": "AeroPress",
-      "category": "equipment",
-      "description": "AeroPress Coffee and Espresso Maker",
-      "image": "https://m.media-amazon.com/images/I/51mfYNtRCbL._AC_UL320_.jpg",
-      "price": 29.95,
-      "in_stock_qty": 9
-    },
-    {
       "id": 11,
       "brand_name": "Caribou Coffee",
       "category": "coffee",
@@ -89,15 +44,6 @@
       "image": "https://m.media-amazon.com/images/I/710vlkmq6wL._AC_UL320_.jpg",
       "price": 9.99,
       "in_stock_qty": 4
-    },
-    {
-      "id": 12,
-      "brand_name": "Mr. Coffee",
-      "category": "equipment",
-      "description": "Mr. Coffee 12-Cup Coffee Maker",
-      "image": "https://m.media-amazon.com/images/I/71ZIcTLsheL._AC_UL320_.jpg",
-      "price": 24.99,
-      "in_stock_qty": 10
     },
     {
       "id": 13,
@@ -109,15 +55,6 @@
       "in_stock_qty": 7
     },
     {
-      "id": 14,
-      "brand_name": "Keurig",
-      "category": "equipment",
-      "description": "Keurig K-Classic Coffee Maker",
-      "image": "https://m.media-amazon.com/images/I/61wQb8IB8UL._AC_UL320_.jpg",
-      "price": 89.99,
-      "in_stock_qty": 3
-    },
-    {
       "id": 15,
       "brand_name": "Intelligentsia",
       "category": "coffee",
@@ -125,15 +62,6 @@
       "image": "https://m.media-amazon.com/images/I/61ljzJa9oAL._AC_UL320_.jpg",
       "price": 16.00,
       "in_stock_qty": 6
-    },
-    {
-      "id": 16,
-      "brand_name": "OXO",
-      "category": "equipment",
-      "description": "OXO Brew 9 Cup Coffee Maker",
-      "image": "https://m.media-amazon.com/images/I/71dxDL0TaIL._AC_UL320_.jpg",
-      "price": 199.99,
-      "in_stock_qty": 2
     },
     {
       "id": 17,
@@ -145,15 +73,6 @@
       "in_stock_qty": 20
     },
     {
-      "id": 18,
-      "brand_name": "Cuisinart",
-      "category": "equipment",
-      "description": "Cuisinart DCC-3200P1 Perfectemp Coffee Maker",
-      "image": "https://m.media-amazon.com/images/I/81ugZ2peAgL._AC_UL320_.jpg",
-      "price": 99.95,
-      "in_stock_qty": 4
-    },
-    {
       "id": 19,
       "brand_name": "Philz Coffee",
       "category": "coffee",
@@ -161,15 +80,6 @@
       "image": "https://m.media-amazon.com/images/I/31R5BZCqcvL._AC_UL320_.jpg",
       "price": 19.95,
       "in_stock_qty": 8
-    },
-    {
-      "id": 20,
-      "brand_name": "DeLonghi",
-      "category": "equipment",
-      "description": "DeLonghi EC155 15 BAR Pump Espresso and Cappuccino Maker",
-      "image": "https://m.media-amazon.com/images/I/61ePiOAtrvL._AC_UL320_.jpg",
-      "price": 99.95,
-      "in_stock_qty": 5
     },
     {
       "id": 21,
@@ -181,15 +91,6 @@
       "in_stock_qty": 12
     },
     {
-      "id": 22,
-      "brand_name": "Hamilton Beach",
-      "category": "equipment",
-      "description": "Hamilton Beach FlexBrew Single Serve Coffee Maker",
-      "image": "https://m.media-amazon.com/images/I/61nCUc7yCgL._AC_UL320_.jpg",
-      "price": 49.99,
-      "in_stock_qty": 6
-    },
-    {
       "id": 23,
       "brand_name": "Seattle's Best",
       "category": "coffee",
@@ -199,15 +100,6 @@
       "in_stock_qty": 10
     },
     {
-      "id": 24,
-      "brand_name": "Zojirushi",
-      "category": "equipment",
-      "description": "Zojirushi EC-DAC50 Zutto 5-Cup Drip Coffeemaker",
-      "image": "https://m.media-amazon.com/images/I/71mVeg95MxL._AC_UL320_.jpg",
-      "price": 72.99,
-      "in_stock_qty": 3
-    },
-    {
       "id": 25,
       "brand_name": "Peet's Coffee",
       "category": "coffee",
@@ -215,6 +107,125 @@
       "image": "https://m.media-amazon.com/images/I/61Ql2mABrfL._AC_UL320_.jpg",
       "price": 13.99,
       "in_stock_qty": 7
+    },
+    {
+      "id": 29,
+      "brand_name": "Bones Coffee",
+      "category": "coffee",
+      "description": "Bones Coffee Company, Maple Bacon, Whole Bean, 1lb",
+      "image": "https://m.media-amazon.com/images/I/71gM2UWsIoL._AC_UL320_.jpg",
+      "price": 17.99,
+      "in_stock_qty": 6
+    }
+  ],
+  "equipment" : [
+    {
+      "id": 2,
+      "brand_name": "Breville",
+      "category": "equipment",
+      "description": "Breville Barista Express Espresso Machine",
+      "image": "https://m.media-amazon.com/images/I/71BvCt6eAFL._AC_UL320_.jpg",
+      "price": 699.99,
+      "in_stock_qty": 2
+    },
+    {
+      "id": 4,
+      "brand_name": "Hario",
+      "category": "equipment",
+      "description": "Hario V60 Ceramic Coffee Dripper",
+      "image": "https://m.media-amazon.com/images/I/51Wp-8q4A7L._AC_UL320_.jpg",
+      "price": 19.99,
+      "in_stock_qty": 15
+    },
+    {
+      "id": 6,
+      "brand_name": "Nespresso",
+      "category": "equipment",
+      "description": "Nespresso VertuoPlus Coffee and Espresso Maker",
+      "image": "https://m.media-amazon.com/images/I/71zI-ry-gXL._AC_UL320_.jpg",
+      "price": 149.99,
+      "in_stock_qty": 7
+    },
+    {
+      "id": 8,
+      "brand_name": "Chemex",
+      "category": "equipment",
+      "description": "Chemex Pour-Over Glass Coffeemaker",
+      "image": "https://m.media-amazon.com/images/I/51rEZwQAmqL._AC_UL320_.jpg",
+      "price": 44.99,
+      "in_stock_qty": 5
+    },
+    {
+      "id": 10,
+      "brand_name": "AeroPress",
+      "category": "equipment",
+      "description": "AeroPress Coffee and Espresso Maker",
+      "image": "https://m.media-amazon.com/images/I/51mfYNtRCbL._AC_UL320_.jpg",
+      "price": 29.95,
+      "in_stock_qty": 9
+    },
+    {
+      "id": 12,
+      "brand_name": "Mr. Coffee",
+      "category": "equipment",
+      "description": "Mr. Coffee 12-Cup Coffee Maker",
+      "image": "https://m.media-amazon.com/images/I/71ZIcTLsheL._AC_UL320_.jpg",
+      "price": 24.99,
+      "in_stock_qty": 10
+    },
+    {
+      "id": 14,
+      "brand_name": "Keurig",
+      "category": "equipment",
+      "description": "Keurig K-Classic Coffee Maker",
+      "image": "https://m.media-amazon.com/images/I/61wQb8IB8UL._AC_UL320_.jpg",
+      "price": 89.99,
+      "in_stock_qty": 3
+    },
+    {
+      "id": 16,
+      "brand_name": "OXO",
+      "category": "equipment",
+      "description": "OXO Brew 9 Cup Coffee Maker",
+      "image": "https://m.media-amazon.com/images/I/71dxDL0TaIL._AC_UL320_.jpg",
+      "price": 199.99,
+      "in_stock_qty": 2
+    },
+    {
+      "id": 18,
+      "brand_name": "Cuisinart",
+      "category": "equipment",
+      "description": "Cuisinart DCC-3200P1 Perfectemp Coffee Maker",
+      "image": "https://m.media-amazon.com/images/I/81ugZ2peAgL._AC_UL320_.jpg",
+      "price": 99.95,
+      "in_stock_qty": 4
+    },
+    {
+      "id": 20,
+      "brand_name": "DeLonghi",
+      "category": "equipment",
+      "description": "DeLonghi EC155 15 BAR Pump Espresso and Cappuccino Maker",
+      "image": "https://m.media-amazon.com/images/I/61ePiOAtrvL._AC_UL320_.jpg",
+      "price": 99.95,
+      "in_stock_qty": 5
+    },
+    {
+      "id": 22,
+      "brand_name": "Hamilton Beach",
+      "category": "equipment",
+      "description": "Hamilton Beach FlexBrew Single Serve Coffee Maker",
+      "image": "https://m.media-amazon.com/images/I/61nCUc7yCgL._AC_UL320_.jpg",
+      "price": 49.99,
+      "in_stock_qty": 6
+    },
+    {
+      "id": 24,
+      "brand_name": "Zojirushi",
+      "category": "equipment",
+      "description": "Zojirushi EC-DAC50 Zutto 5-Cup Drip Coffeemaker",
+      "image": "https://m.media-amazon.com/images/I/71mVeg95MxL._AC_UL320_.jpg",
+      "price": 72.99,
+      "in_stock_qty": 3
     },
     {
       "id": 26,
@@ -235,15 +246,6 @@
       "in_stock_qty": 4
     },
     {
-      "id": 29,
-      "brand_name": "Bones Coffee",
-      "category": "coffee",
-      "description": "Bones Coffee Company, Maple Bacon, Whole Bean, 1lb",
-      "image": "https://m.media-amazon.com/images/I/71gM2UWsIoL._AC_UL320_.jpg",
-      "price": 17.99,
-      "in_stock_qty": 6
-    },
-    {
       "id": 30,
       "brand_name": "Ninja",
       "category": "equipment",
@@ -251,6 +253,28 @@
       "image": "https://m.media-amazon.com/images/I/512uRjQwFIL._AC_UL320_.jpg",
       "price": 229.99,
       "in_stock_qty": 3
+    }
+  ],
+  "cart" : [
+    {
+      "id": 2,
+      "brand_name": "Breville",
+      "category": "equipment",
+      "description": "Breville Barista Express Espresso Machine",
+      "image": "https://m.media-amazon.com/images/I/71BvCt6eAFL._AC_UL320_.jpg",
+      "price": 699.99,
+      "in_stock_qty": 2
+    }
+  ],
+  "purchased" : [
+    {
+      "id": 2,
+      "brand_name": "Breville",
+      "category": "equipment",
+      "description": "Breville Barista Express Espresso Machine",
+      "image": "https://m.media-amazon.com/images/I/71BvCt6eAFL._AC_UL320_.jpg",
+      "price": 699.99,
+      "in_stock_qty": 2
     }
   ]
 }
