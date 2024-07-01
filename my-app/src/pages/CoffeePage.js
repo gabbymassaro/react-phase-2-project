@@ -2,12 +2,12 @@ import React from "react"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import AddNewCoffee from "./AddNewCoffee"
-import CoffeeCard from "./CoffeeCard"
+import AddNewCoffee from "../components/AddNewCoffee"
+import CoffeeCard from "../components/CoffeeCard"
 
 import "../App.css"
 
-function CoffeeList({ coffeeListings, onAddCoffee }) {
+function CoffeePage({ coffeeListings, onAddCoffee, onDeleteCoffee }) {
   return (
     <>
       <div>
@@ -17,7 +17,10 @@ function CoffeeList({ coffeeListings, onAddCoffee }) {
           <Row>
             {coffeeListings.map((coffeeListing) => (
               <Col key={coffeeListing.id} md={3}>
-                <CoffeeCard coffeeListing={coffeeListing} />
+                <CoffeeCard
+                  coffeeListing={coffeeListing}
+                  onDeleteCoffee={onDeleteCoffee}
+                />
               </Col>
             ))}
           </Row>
@@ -27,4 +30,4 @@ function CoffeeList({ coffeeListings, onAddCoffee }) {
   )
 }
 
-export default CoffeeList
+export default CoffeePage

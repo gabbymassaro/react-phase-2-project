@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Navigation from "./Navigation"
-import CoffeeList from "./CoffeeList"
-import EquipmentList from "./EquipmentList"
+import CoffeePage from "../pages/CoffeePage"
+import EquipmentPage from "../pages/EquipmentPage"
 
 import React, { useEffect, useState } from "react"
 
@@ -41,15 +41,21 @@ function App() {
           <Route
             path="/coffee"
             element={
-              <CoffeeList
+              <CoffeePage
                 coffeeListings={coffeeListings}
                 onAddCoffee={toggleFetchTrigger}
+                onDeleteCoffee={toggleFetchTrigger}
               />
             }
           />
           <Route
             path="/equipment"
-            element={<EquipmentList equipmentListings={equipmentListings} />}
+            element={
+              <EquipmentPage
+                equipmentListings={equipmentListings}
+                onDeleteEquipment={toggleFetchTrigger}
+              />
+            }
           />
           <Route path="/cart" element={<Cart />} />
           <Route path="/" element={<Home />} />

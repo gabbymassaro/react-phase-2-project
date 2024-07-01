@@ -1,19 +1,24 @@
 import React from "react"
+import Button from "react-bootstrap/Button"
 import Card from "react-bootstrap/Card"
 import "../App.css"
 
 function CoffeeCard({
-  coffeeListing: {
-    brand_name,
-    category,
-    description,
-    image,
-    price,
-    in_stock_qty,
-  },
+  coffeeListing: { id, description, image, price, in_stock_qty },
+  onDeleteCoffee,
 }) {
+  const handleDelete = (event) => {
+    fetch(`http://localhost:3001/coffee/${id}`, {
+      method: "DELETE",
+    })
+      .then((response) => response.json())
+      .then(() => onDeleteCoffee(id))
+  }
   return (
     <Card className="h-100">
+      <Button size="sm" variant="outline-danger" onClick={handleDelete}>
+        X
+      </Button>{" "}
       <div className="image-container">
         <Card.Img
           variant="top"

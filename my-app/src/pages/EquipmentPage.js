@@ -1,10 +1,10 @@
 import React from "react"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import EquipmentCard from "./EquipmentCard"
+import EquipmentCard from "../components/EquipmentCard"
 import { Container } from "react-bootstrap"
 
-function EquipmentList({ equipmentListings }) {
+function EquipmentPage({ equipmentListings, onDeleteEquipment }) {
   return (
     <>
       <div>
@@ -14,7 +14,10 @@ function EquipmentList({ equipmentListings }) {
             <Row>
               {equipmentListings.map((equipmentListing) => (
                 <Col key={equipmentListing.id} md={3}>
-                  <EquipmentCard equipmentListing={equipmentListing} />
+                  <EquipmentCard
+                    equipmentListing={equipmentListing}
+                    onDeleteEquipment={onDeleteEquipment}
+                  />
                 </Col>
               ))}
             </Row>
@@ -25,4 +28,4 @@ function EquipmentList({ equipmentListings }) {
   )
 }
 
-export default EquipmentList
+export default EquipmentPage
