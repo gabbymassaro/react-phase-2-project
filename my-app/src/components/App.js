@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Navigation from "./Navigation"
 import CoffeePage from "../pages/CoffeePage"
 import EquipmentPage from "../pages/EquipmentPage"
+import CartPage from "../pages/CartPage"
 
 import React, { useEffect, useState } from "react"
 
@@ -57,7 +58,7 @@ function App() {
               />
             }
           />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/cart" element={<CartPage />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
