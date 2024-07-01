@@ -6,7 +6,7 @@ function EquipmentCard({
   equipmentListing: { id, description, image, price, in_stock_qty },
   onDeleteEquipment,
 }) {
-  const handleDelete = (event) => {
+  const handleDelete = () => {
     fetch(`http://localhost:3001/equipment/${id}`, {
       method: "DELETE",
     })
@@ -14,24 +14,28 @@ function EquipmentCard({
       .then(() => onDeleteEquipment(id))
   }
   return (
-    <Card className="h-100">
-      <Button size="sm" variant="outline-danger" onClick={handleDelete}>
-        X
-      </Button>{" "}
-      <div className="image-container">
-        <Card.Img
-          variant="top"
-          src={image}
-          className="card-img-top fixed-img-size"
-        />
+    <>
+      <div className="container">
+        <Card className="h-100">
+          <Button size="sm" variant="outline-danger" onClick={handleDelete}>
+            X
+          </Button>{" "}
+          <div className="image-container">
+            <Card.Img
+              variant="top"
+              src={image}
+              className="card-img-top fixed-img-size"
+            />
+          </div>
+          <Card.Body>
+            <Card.Title>{description}</Card.Title>
+            <Card.Text>
+              Price: ${price} | Qty: {in_stock_qty}
+            </Card.Text>
+          </Card.Body>
+        </Card>
       </div>
-      <Card.Body>
-        <Card.Title>{description}</Card.Title>
-        <Card.Text>
-          Price: ${price} | Qty: {in_stock_qty}
-        </Card.Text>
-      </Card.Body>
-    </Card>
+    </>
   )
 }
 

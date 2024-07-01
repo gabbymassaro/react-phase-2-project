@@ -10,17 +10,18 @@ import "../App.css"
 function CoffeePage({ coffeeListings, onAddCoffee, onDeleteCoffee }) {
   return (
     <>
-      <div>
-        <h2>Coffee</h2>
+      <div className="container">
         <AddNewCoffee onAddCoffee={onAddCoffee} />
         <Container fluid>
           <Row>
             {coffeeListings.map((coffeeListing) => (
               <Col key={coffeeListing.id} md={3}>
-                <CoffeeCard
-                  coffeeListing={coffeeListing}
-                  onDeleteCoffee={onDeleteCoffee}
-                />
+                <div className="row-container">
+                  <CoffeeCard
+                    coffeeListing={coffeeListing}
+                    onDeleteCoffee={onDeleteCoffee}
+                  />
+                </div>
               </Col>
             ))}
           </Row>

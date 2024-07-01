@@ -7,22 +7,22 @@ import { Container } from "react-bootstrap"
 function EquipmentPage({ equipmentListings, onDeleteEquipment }) {
   return (
     <>
-      <div>
-        <body>
-          <h2>Equipment</h2>
-          <Container fluid>
-            <Row>
-              {equipmentListings.map((equipmentListing) => (
-                <Col key={equipmentListing.id} md={3}>
+      <div className="container">
+        <h2>Equipment</h2>
+        <Container fluid>
+          <Row>
+            {equipmentListings.map((equipmentListing) => (
+              <Col key={equipmentListing.id} md={3}>
+                <div className="row-container">
                   <EquipmentCard
                     equipmentListing={equipmentListing}
                     onDeleteEquipment={onDeleteEquipment}
                   />
-                </Col>
-              ))}
-            </Row>
-          </Container>
-        </body>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </Container>
       </div>
     </>
   )
