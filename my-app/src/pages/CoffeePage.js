@@ -7,7 +7,12 @@ import CoffeeCard from "../components/CoffeeCard"
 
 import "../App.css"
 
-function CoffeePage({ coffeeListings, onAddCoffee, onDeleteCoffee }) {
+function CoffeePage({
+  coffeeListings,
+  onAddCoffee,
+  onDeleteCoffee,
+  onAddToCart,
+}) {
   return (
     <>
       <div className="container">
@@ -20,6 +25,7 @@ function CoffeePage({ coffeeListings, onAddCoffee, onDeleteCoffee }) {
                   <CoffeeCard
                     coffeeListing={coffeeListing}
                     onDeleteCoffee={onDeleteCoffee}
+                    onAddToCart={onAddToCart}
                   />
                 </div>
               </Col>

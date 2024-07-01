@@ -14,6 +14,7 @@ function Home() {
 function App() {
   const [coffeeListings, setCoffeeListings] = useState([])
   const [equipmentListings, setEquipmentListings] = useState([])
+  const [cartItems, setCartItems] = useState([])
   const [fetchTrigger, setFetchTrigger] = useState(false)
 
   const toggleFetchTrigger = () => setFetchTrigger(!fetchTrigger)
@@ -30,6 +31,12 @@ function App() {
       .then((data) => setEquipmentListings(data))
   }, [fetchTrigger])
 
+  useEffect(() => {
+    fetch("http://localhost:3001/cart")
+      .then((response) => response.json())
+      .then((data) => setCartItems(data))
+  }, [fetchTrigger])
+
   return (
     <Router>
       <div>
@@ -42,6 +49,7 @@ function App() {
                 coffeeListings={coffeeListings}
                 onAddCoffee={toggleFetchTrigger}
                 onDeleteCoffee={toggleFetchTrigger}
+                onAddToCart={toggleFetchTrigger}
               />
             }
           />
@@ -55,7 +63,15 @@ function App() {
               />
             }
           />
-          <Route path="/cart" element={<CartPage />} />
+          <Route
+            path="/cart"
+            element={
+              <CartPage
+                cartItems={cartItems}
+                onAddToCart={toggleFetchTrigger}
+              />
+            }
+          />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
