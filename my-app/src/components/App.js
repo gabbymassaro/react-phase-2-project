@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Navigation from "./Navigation"
-import CoffeeList from "./CoffeeList"
+import CoffeePage from "../pages/CoffeePage"
 import EquipmentList from "./EquipmentList"
 
 import React, { useEffect, useState } from "react"
@@ -41,7 +41,7 @@ function App() {
           <Route
             path="/coffee"
             element={
-              <CoffeeList
+              <CoffeePage
                 coffeeListings={coffeeListings}
                 onAddCoffee={toggleFetchTrigger}
               />

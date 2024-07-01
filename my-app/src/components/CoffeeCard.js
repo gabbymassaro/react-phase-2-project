@@ -1,19 +1,19 @@
 import React from "react"
+import Button from "react-bootstrap/Button"
 import Card from "react-bootstrap/Card"
 import "../App.css"
 
 function CoffeeCard({
-  coffeeListing: {
-    brand_name,
-    category,
-    description,
-    image,
-    price,
-    in_stock_qty,
-  },
+  coffeeListing: { id, description, image, price, in_stock_qty },
 }) {
+  const handleDelete = () => {
+    console.log("Product ID: ", id)
+  }
   return (
     <Card className="h-100">
+      <Button size="sm" variant="outline-danger" onClick={handleDelete}>
+        X
+      </Button>{" "}
       <div className="image-container">
         <Card.Img
           variant="top"
