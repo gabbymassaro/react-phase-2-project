@@ -14,28 +14,24 @@ function EquipmentCard({
       .then(() => onDeleteEquipment(id))
   }
   return (
-    <>
-      <div className="container">
-        <Card className="h-100">
-          <Button size="sm" variant="outline-danger" onClick={handleDelete}>
-            X
-          </Button>{" "}
-          <div className="image-container">
-            <Card.Img
-              variant="top"
-              src={image}
-              className="card-img-top fixed-img-size"
-            />
-          </div>
-          <Card.Body>
-            <Card.Title>{description}</Card.Title>
-            <Card.Text>
-              Price: ${price} | Qty: {in_stock_qty}
-            </Card.Text>
-          </Card.Body>
-        </Card>
+    <Card className="h-100">
+      <Button size="sm" variant="outline-danger" onClick={handleDelete}>
+        X
+      </Button>{" "}
+      <div className="image-container">
+        <Card.Img
+          variant="top"
+          src={image}
+          className="card-img-top fixed-img-size"
+        />
       </div>
-    </>
+      <Card.Body>
+        <Card.Title>{description}</Card.Title>
+        <Card.Text>
+          Price: ${price} | Qty: {in_stock_qty}
+        </Card.Text>
+      </Card.Body>
+    </Card>
   )
 }
 

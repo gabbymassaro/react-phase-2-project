@@ -1,14 +1,19 @@
 import React from "react"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
+import AddNewEquipment from "../components/AddNewEquipment"
 import EquipmentCard from "../components/EquipmentCard"
 import { Container } from "react-bootstrap"
 
-function EquipmentPage({ equipmentListings, onDeleteEquipment }) {
+function EquipmentPage({
+  equipmentListings,
+  onDeleteEquipment,
+  onAddEquipment,
+}) {
   return (
     <>
       <div className="container">
-        <h2>Equipment</h2>
+        <AddNewEquipment onAddEquipment={onAddEquipment} />
         <Container fluid>
           <Row>
             {equipmentListings.map((equipmentListing) => (

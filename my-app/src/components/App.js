@@ -50,6 +50,7 @@ function App() {
             element={
               <EquipmentPage
                 equipmentListings={equipmentListings}
+                onAddEquipment={toggleFetchTrigger}
                 onDeleteEquipment={toggleFetchTrigger}
               />
             }
