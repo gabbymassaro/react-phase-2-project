@@ -7,23 +7,21 @@ import CoffeeCard from "./CoffeeCard"
 
 import "../App.css"
 
-function CoffeeList({ coffeeListings }) {
+function CoffeeList({ coffeeListings, onAddCoffee }) {
   return (
     <>
       <div>
-        <body>
-          <h2>Coffee</h2>
-          <AddNewCoffee />
-          <Container fluid>
-            <Row>
-              {coffeeListings.map((coffeeListing) => (
-                <Col key={coffeeListing.id} md={3}>
-                  <CoffeeCard coffeeListing={coffeeListing} />
-                </Col>
-              ))}
-            </Row>
-          </Container>
-        </body>
+        <h2>Coffee</h2>
+        <AddNewCoffee onAddCoffee={onAddCoffee} />
+        <Container fluid>
+          <Row>
+            {coffeeListings.map((coffeeListing) => (
+              <Col key={coffeeListing.id} md={3}>
+                <CoffeeCard coffeeListing={coffeeListing} />
+              </Col>
+            ))}
+          </Row>
+        </Container>
       </div>
     </>
   )

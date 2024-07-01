@@ -17,18 +17,21 @@ function Cart() {
 function App() {
   const [coffeeListings, setCoffeeListings] = useState([])
   const [equipmentListings, setEquipmentListings] = useState([])
+  const [fetchTrigger, setFetchTrigger] = useState(false)
+
+  const toggleFetchTrigger = () => setFetchTrigger(!fetchTrigger)
 
   useEffect(() => {
     fetch("http://localhost:3001/coffee")
       .then((response) => response.json())
       .then((data) => setCoffeeListings(data))
-  }, [])
+  }, [fetchTrigger])
 
   useEffect(() => {
     fetch("http://localhost:3001/equipment")
       .then((response) => response.json())
       .then((data) => setEquipmentListings(data))
-  }, [])
+  }, [fetchTrigger])
 
   return (
     <Router>
@@ -37,7 +40,12 @@ function App() {
         <Routes>
           <Route
             path="/coffee"
-            element={<CoffeeList coffeeListings={coffeeListings} />}
+            element={
+              <CoffeeList
+                coffeeListings={coffeeListings}
+                onAddCoffee={toggleFetchTrigger}
+              />
+            }
           />
           <Route
             path="/equipment"
