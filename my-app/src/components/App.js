@@ -3,15 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Navigation from "./Navigation"
 import CoffeePage from "../pages/CoffeePage"
 import EquipmentPage from "../pages/EquipmentPage"
+import CartPage from "../pages/CartPage"
 
 import React, { useEffect, useState } from "react"
 
 function Home() {
   return <h2>Welcome!</h2>
-}
-
-function Cart() {
-  return <h2>Cart</h2>
 }
 
 function App() {
@@ -53,11 +50,12 @@ function App() {
             element={
               <EquipmentPage
                 equipmentListings={equipmentListings}
+                onAddEquipment={toggleFetchTrigger}
                 onDeleteEquipment={toggleFetchTrigger}
               />
             }
           />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/cart" element={<CartPage />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>

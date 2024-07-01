@@ -6,7 +6,7 @@ function EquipmentCard({
   equipmentListing: { id, description, image, price, in_stock_qty },
   onDeleteEquipment,
 }) {
-  const handleDelete = (event) => {
+  const handleDelete = () => {
     fetch(`http://localhost:3001/equipment/${id}`, {
       method: "DELETE",
     })

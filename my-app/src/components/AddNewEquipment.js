@@ -4,14 +4,14 @@ import Form from "react-bootstrap/Form"
 
 const initialValue = {
   brand_name: "",
-  category: "coffee",
+  category: "equipment",
   description: "",
   image: "",
   price: "",
   in_stock_qty: "",
 }
 
-function AddNewCoffee({ onAddCoffee }) {
+function AddNewEquipment({ onAddEquipment }) {
   const [formData, setFormData] = useState(initialValue)
   const [toggleForm, setToggleForm] = useState(false)
 
@@ -31,14 +31,14 @@ function AddNewCoffee({ onAddCoffee }) {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    fetch("http://localhost:3001/coffee", {
+    fetch("http://localhost:3001/equipment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(sanitizeFormData()),
     })
-      .then(onAddCoffee)
+      .then(onAddEquipment)
       .then(resetForm)
       .then(toggleFormTrigger)
   }
@@ -47,7 +47,7 @@ function AddNewCoffee({ onAddCoffee }) {
     <>
       <div className="container">
         <Button variant="dark" onClick={toggleFormTrigger}>
-          Add New Coffee Listing
+          Add New Equipment Listing
         </Button>
       </div>
       {toggleForm && (
@@ -106,4 +106,4 @@ function AddNewCoffee({ onAddCoffee }) {
   )
 }
 
-export default AddNewCoffee
+export default AddNewEquipment
