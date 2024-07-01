@@ -50,7 +50,12 @@ function App() {
           />
           <Route
             path="/equipment"
-            element={<EquipmentPage equipmentListings={equipmentListings} />}
+            element={
+              <EquipmentPage
+                equipmentListings={equipmentListings}
+                onDeleteEquipment={toggleFetchTrigger}
+              />
+            }
           />
           <Route path="/cart" element={<Cart />} />
           <Route path="/" element={<Home />} />
