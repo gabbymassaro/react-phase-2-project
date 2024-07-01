@@ -7,7 +7,7 @@ import CoffeeCard from "../components/CoffeeCard"
 
 import "../App.css"
 
-function CoffeePage({ coffeeListings, onAddCoffee }) {
+function CoffeePage({ coffeeListings, onAddCoffee, onDeleteCoffee }) {
   return (
     <>
       <div>
@@ -17,7 +17,10 @@ function CoffeePage({ coffeeListings, onAddCoffee }) {
           <Row>
             {coffeeListings.map((coffeeListing) => (
               <Col key={coffeeListing.id} md={3}>
-                <CoffeeCard coffeeListing={coffeeListing} />
+                <CoffeeCard
+                  coffeeListing={coffeeListing}
+                  onDeleteCoffee={onDeleteCoffee}
+                />
               </Col>
             ))}
           </Row>

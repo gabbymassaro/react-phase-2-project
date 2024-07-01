@@ -5,9 +5,14 @@ import "../App.css"
 
 function CoffeeCard({
   coffeeListing: { id, description, image, price, in_stock_qty },
+  onDeleteCoffee,
 }) {
-  const handleDelete = () => {
-    console.log("Product ID: ", id)
+  const handleDelete = (event) => {
+    fetch(`http://localhost:3001/coffee/${id}`, {
+      method: "DELETE",
+    })
+      .then((response) => response.json())
+      .then(() => onDeleteCoffee(id))
   }
   return (
     <Card className="h-100">

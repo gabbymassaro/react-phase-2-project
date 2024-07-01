@@ -44,6 +44,7 @@ function App() {
               <CoffeePage
                 coffeeListings={coffeeListings}
                 onAddCoffee={toggleFetchTrigger}
+                onDeleteCoffee={toggleFetchTrigger}
               />
             }
           />
