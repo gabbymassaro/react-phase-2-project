@@ -1,19 +1,26 @@
 import React from "react"
 import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
 import EquipmentCard from "./EquipmentCard"
+import { Container } from "react-bootstrap"
 
 function EquipmentList({ equipmentListings }) {
   return (
     <>
-      <h1>Equipment</h1>
-      <Row xs={1} md={2} className="g-4">
-        {equipmentListings.map((equipmentListing) => (
-          <EquipmentCard
-            key={equipmentListing.id}
-            equipmentListing={equipmentListing}
-          />
-        ))}
-      </Row>
+      <div>
+        <body>
+          <h2>Equipment</h2>
+          <Container fluid>
+            <Row>
+              {equipmentListings.map((equipmentListing) => (
+                <Col key={equipmentListing.id} md={3}>
+                  <EquipmentCard equipmentListing={equipmentListing} />
+                </Col>
+              ))}
+            </Row>
+          </Container>
+        </body>
+      </div>
     </>
   )
 }
