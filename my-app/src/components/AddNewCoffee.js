@@ -7,12 +7,15 @@ const initialValue = {
   category: "coffee",
   description: "",
   image: "",
-  price: 0,
-  in_stock_qty: 0,
+  price: "",
+  in_stock_qty: "",
 }
 
 function AddNewCoffee({ onAddCoffee }) {
   const [formData, setFormData] = useState(initialValue)
+  const [toggleForm, setToggleForm] = useState(false)
+
+  const toggleFormTrigger = () => setToggleForm(!toggleForm)
 
   const handleChange = ({ target: { name, value } }) => {
     setFormData({ ...formData, [name]: value })
@@ -37,54 +40,62 @@ function AddNewCoffee({ onAddCoffee }) {
     })
       .then(onAddCoffee)
       .then(resetForm)
+      .then(toggleFormTrigger)
   }
 
   return (
-    <Form onSubmit={handleSubmit}>
-      <Form.Label>Brand</Form.Label>
-      <Form.Control
-        type="text"
-        name="brand_name"
-        value={formData.brand_name}
-        placeholder="Enter Brand"
-        onChange={handleChange}
-      />
-      <Form.Label>Description</Form.Label>
-      <Form.Control
-        type="text"
-        name="description"
-        value={formData.description}
-        placeholder="Description"
-        onChange={handleChange}
-      />
-      <Form.Label>Image URL</Form.Label>
-      <Form.Control
-        type="text"
-        name="image"
-        value={formData.image}
-        placeholder="image url"
-        onChange={handleChange}
-      />
-      <Form.Label>Price</Form.Label>
-      <Form.Control
-        type="text"
-        name="price"
-        value={formData.price}
-        placeholder="$0.00"
-        onChange={handleChange}
-      />
-      <Form.Label>Quantity</Form.Label>
-      <Form.Control
-        type="text"
-        name="in_stock_qty"
-        value={formData.in_stock_qty}
-        placeholder="0"
-        onChange={handleChange}
-      />
-      <Button variant="primary" type="submit">
-        Submit
+    <>
+      <Button variant="dark" onClick={toggleFormTrigger}>
+        Add New Coffee Listing
       </Button>
-    </Form>
+      {toggleForm && (
+        <Form onSubmit={handleSubmit}>
+          <Form.Label>Brand</Form.Label>
+          <Form.Control
+            type="text"
+            name="brand_name"
+            value={formData.brand_name}
+            placeholder="Enter Brand"
+            onChange={handleChange}
+          />
+          <Form.Label>Description</Form.Label>
+          <Form.Control
+            type="text"
+            name="description"
+            value={formData.description}
+            placeholder="Description"
+            onChange={handleChange}
+          />
+          <Form.Label>Image URL</Form.Label>
+          <Form.Control
+            type="text"
+            name="image"
+            value={formData.image}
+            placeholder="image url"
+            onChange={handleChange}
+          />
+          <Form.Label>Price</Form.Label>
+          <Form.Control
+            type="text"
+            name="price"
+            value={formData.price}
+            placeholder="$0.00"
+            onChange={handleChange}
+          />
+          <Form.Label>Quantity</Form.Label>
+          <Form.Control
+            type="text"
+            name="in_stock_qty"
+            value={formData.in_stock_qty}
+            placeholder="0"
+            onChange={handleChange}
+          />
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
+        </Form>
+      )}
+    </>
   )
 }
 
