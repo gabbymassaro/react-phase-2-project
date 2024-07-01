@@ -1,10 +1,10 @@
 import React from "react"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import EquipmentCard from "./EquipmentCard"
+import EquipmentCard from "../components/EquipmentCard"
 import { Container } from "react-bootstrap"
 
-function EquipmentList({ equipmentListings }) {
+function EquipmentPage({ equipmentListings }) {
   return (
     <>
       <div>
@@ -25,4 +25,4 @@ function EquipmentList({ equipmentListings }) {
   )
 }
 
-export default EquipmentList
+export default EquipmentPage
