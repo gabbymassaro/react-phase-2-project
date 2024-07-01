@@ -1,9 +1,8 @@
 import React from "react"
 import Card from "react-bootstrap/Card"
-import "../App.css"
 
-function CoffeeCard({
-  coffeeListing: {
+function EquipmentCard({
+  equipmentListing: {
     brand_name,
     category,
     description,
@@ -31,4 +30,4 @@ function CoffeeCard({
   )
 }
 
-export default CoffeeCard
+export default EquipmentCard
