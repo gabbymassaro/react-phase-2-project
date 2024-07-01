@@ -1,7 +1,6 @@
 import React from "react"
 import Card from "react-bootstrap/Card"
-import Col from "react-bootstrap/Col"
-import Image from "react-bootstrap/Image"
+import "../App.css"
 
 function CoffeeCard({
   coffeeListing: {
@@ -14,19 +13,21 @@ function CoffeeCard({
   },
 }) {
   return (
-    <Col>
-      <Card>
-        <Col xs={6} md={4}>
-          <Image variant="top" src={image} thumbnail />
-          <Card.Body>
-            <Card.Title>{description}</Card.Title>
-            <Card.Text>
-              Price: ${price} | Qty: {in_stock_qty}
-            </Card.Text>
-          </Card.Body>
-        </Col>
-      </Card>
-    </Col>
+    <Card className="h-100">
+      <div className="image-container">
+        <Card.Img
+          variant="top"
+          src={image}
+          className="card-img-top fixed-img-size"
+        />
+      </div>
+      <Card.Body>
+        <Card.Title>{description}</Card.Title>
+        <Card.Text>
+          Price: ${price} | Qty: {in_stock_qty}
+        </Card.Text>
+      </Card.Body>
+    </Card>
   )
 }
 
