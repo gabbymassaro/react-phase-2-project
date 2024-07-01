@@ -11,10 +11,6 @@ function Home() {
   return <h2>Welcome!</h2>
 }
 
-function Cart() {
-  return <h2>Cart</h2>
-}
-
 function App() {
   const [coffeeListings, setCoffeeListings] = useState([])
   const [equipmentListings, setEquipmentListings] = useState([])

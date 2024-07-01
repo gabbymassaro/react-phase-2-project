@@ -51,17 +51,17 @@ function AddNewCoffee({ onAddCoffee }) {
         </Button>
       </div>
       {toggleForm && (
-        <div className="container">
+        <div className="container" id="listing-form">
           <Form onSubmit={handleSubmit}>
-            <Form.Label>Brand</Form.Label>
+            <Form.Label></Form.Label>
             <Form.Control
               type="text"
               name="brand_name"
               value={formData.brand_name}
-              placeholder="Enter Brand"
+              placeholder="Brand Name"
               onChange={handleChange}
             />
-            <Form.Label>Description</Form.Label>
+            <Form.Label></Form.Label>
             <Form.Control
               type="text"
               name="description"
@@ -69,33 +69,36 @@ function AddNewCoffee({ onAddCoffee }) {
               placeholder="Description"
               onChange={handleChange}
             />
-            <Form.Label>Image URL</Form.Label>
+            <Form.Label></Form.Label>
             <Form.Control
               type="text"
               name="image"
               value={formData.image}
-              placeholder="image url"
+              placeholder="'https://image.url'"
               onChange={handleChange}
             />
-            <Form.Label>Price</Form.Label>
+            <Form.Label></Form.Label>
             <Form.Control
               type="text"
               name="price"
               value={formData.price}
-              placeholder="$0.00"
+              placeholder="Price $0.00"
               onChange={handleChange}
             />
-            <Form.Label>Quantity</Form.Label>
+            <Form.Label></Form.Label>
             <Form.Control
               type="text"
               name="in_stock_qty"
               value={formData.in_stock_qty}
-              placeholder="0"
+              placeholder="Quantity 0"
               onChange={handleChange}
             />
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
+            <br></br>
+            <div className="d-grid gap-2">
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
+            </div>
           </Form>
         </div>
       )}

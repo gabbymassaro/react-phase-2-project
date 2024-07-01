@@ -24,3 +24,8 @@
 .container {
   margin-bottom: 20px;
 }
+
+#listing-form {
+  padding: 10px;
+  background-color: whitesmoke;
+}
