@@ -4,7 +4,8 @@ import Card from "react-bootstrap/Card"
 import "../App.css"
 
 function CoffeeCard({ coffeeListing, onAddToCart, onDeleteCoffee }) {
-  const { id, description, image, price, in_stock_qty } = coffeeListing
+  const { description, image, price, in_stock_qty } = coffeeListing
+  const { id, ...newCartItem } = coffeeListing
 
   const handleDelete = () => {
     fetch(`http://localhost:3001/coffee/${id}`, {
@@ -20,8 +21,8 @@ function CoffeeCard({ coffeeListing, onAddToCart, onDeleteCoffee }) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(coffeeListing),
-    }).then(onAddToCart(coffeeListing))
+      body: JSON.stringify(newCartItem),
+    }).then(onAddToCart)
   }
 
   return (
