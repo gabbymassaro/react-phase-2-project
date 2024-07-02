@@ -29,3 +29,18 @@
   padding: 10px;
   background-color: whitesmoke;
 }
+
+.circle-logo{
+  border-radius: 50px;
+}
+
+.home-page{
+  background-color: #424344;
+  height: 100vh;
+  color: #f6f7e8;
+  font-family: 'Cinzel', serif;
+}
+
+.header-container{
+  padding: 10px;
+}

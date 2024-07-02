@@ -11,7 +11,13 @@ function Navigation() {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          Piotr Coffee Co.
+          <img
+            className="circle-logo"
+            src="/coffee-logo.jpg"
+            width="100"
+            height="100"
+            alt="Coffee Company logo"
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
