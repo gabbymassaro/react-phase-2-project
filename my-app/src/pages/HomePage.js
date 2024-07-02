@@ -6,18 +6,19 @@ function HomePage() {
   return (
     <div className="home-page">
       <Container className="header-container">
-        <h1>Slightly Spooky Coffee Co. ☕️</h1>
+        <h1>
+          <strong>Slightly Spooky Coffee Co. ☕️</strong>
+        </h1>
         <br></br>
-        <h3>Welcome to our little shop of caffine goods!</h3>
+        <h3> Welcome to our little shop!</h3>
         <p className="welcome-paragraph">
           Slightly Spooky was founded in 2024 by Piotr and Gabby Romanowski.
-          Together, our founders started a website that brings all your caffine
-          needs together. Whether you want to try a new blend, or need more
-          filters, we have you covered.
+          Together, our founders started an online business that brings all of
+          your coffee needs in one place. Whether you want to try a new blend,
+          or need more filters, we have you covered.
         </p>
         <br></br>
-        <p>The only (slightly) spooky thing about us, is our good deals 👻</p>
-        <br></br>
+        <p>The only thing (slightly) spooky about us, is our deals 👻</p>
         <br></br>
         <Carousel fade>
           <Carousel.Item>

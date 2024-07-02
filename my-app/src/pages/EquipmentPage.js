@@ -13,23 +13,25 @@ function EquipmentPage({
 }) {
   return (
     <>
-      <div className="container">
-        <AddNewEquipment onAddEquipment={onAddEquipment} />
-        <Container fluid>
-          <Row>
-            {equipmentListings.map((equipmentListing) => (
-              <Col key={equipmentListing.id} md={3}>
-                <div className="row-container">
-                  <EquipmentCard
-                    equipmentListing={equipmentListing}
-                    onDeleteEquipment={onDeleteEquipment}
-                    onAddToCart={onAddToCart}
-                  />
-                </div>
-              </Col>
-            ))}
-          </Row>
-        </Container>
+      <div className="equipment-page">
+        <div className="container">
+          <AddNewEquipment onAddEquipment={onAddEquipment} />
+          <Container fluid>
+            <Row>
+              {equipmentListings.map((equipmentListing) => (
+                <Col key={equipmentListing.id} md={3}>
+                  <div className="row-container">
+                    <EquipmentCard
+                      equipmentListing={equipmentListing}
+                      onDeleteEquipment={onDeleteEquipment}
+                      onAddToCart={onAddToCart}
+                    />
+                  </div>
+                </Col>
+              ))}
+            </Row>
+          </Container>
+        </div>
       </div>
     </>
   )
