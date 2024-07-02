@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid"
 
 const initialValue = {
   brand_name: "",
-  product_id: uuidv4().slice(0, 3),
+  product_id: uuidv4(),
   category: "equipment",
   description: "",
   image: "",

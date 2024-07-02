@@ -22,6 +22,8 @@ function Navigation() {
             <Nav.Link as={Link} to="./equipment">
               Equipment
             </Nav.Link>
+          </Nav>
+          <Nav>
             <Nav.Link as={Link} to="./cart">
               <FontAwesomeIcon icon={faCartShopping} />
             </Nav.Link>

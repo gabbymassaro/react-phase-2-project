@@ -11,8 +11,6 @@ function Home() {
   return <h2>Welcome!</h2>
 }
 
-// console.log(uuidv4().slice(0, 3))
-
 function App() {
   const [coffeeListings, setCoffeeListings] = useState([])
   const [equipmentListings, setEquipmentListings] = useState([])
