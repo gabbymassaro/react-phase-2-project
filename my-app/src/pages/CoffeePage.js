@@ -7,25 +7,33 @@ import CoffeeCard from "../components/CoffeeCard"
 
 import "../App.css"
 
-function CoffeePage({ coffeeListings, onAddCoffee, onDeleteCoffee }) {
+function CoffeePage({
+  coffeeListings,
+  onAddCoffee,
+  onDeleteCoffee,
+  onAddToCart,
+}) {
   return (
     <>
-      <div className="container">
-        <AddNewCoffee onAddCoffee={onAddCoffee} />
-        <Container fluid>
-          <Row>
-            {coffeeListings.map((coffeeListing) => (
-              <Col key={coffeeListing.id} md={3}>
-                <div className="row-container">
-                  <CoffeeCard
-                    coffeeListing={coffeeListing}
-                    onDeleteCoffee={onDeleteCoffee}
-                  />
-                </div>
-              </Col>
-            ))}
-          </Row>
-        </Container>
+      <div className="coffee-page">
+        <div className="container">
+          <AddNewCoffee onAddCoffee={onAddCoffee} />
+          <Container fluid>
+            <Row>
+              {coffeeListings.map((coffeeListing) => (
+                <Col key={coffeeListing.id} md={3}>
+                  <div className="row-container">
+                    <CoffeeCard
+                      coffeeListing={coffeeListing}
+                      onDeleteCoffee={onDeleteCoffee}
+                      onAddToCart={onAddToCart}
+                    />
+                  </div>
+                </Col>
+              ))}
+            </Row>
+          </Container>
+        </div>
       </div>
     </>
   )

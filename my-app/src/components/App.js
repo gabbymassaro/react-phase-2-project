@@ -1,19 +1,17 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Navigation from "./Navigation"
+import HomePage from "../pages/HomePage"
 import CoffeePage from "../pages/CoffeePage"
 import EquipmentPage from "../pages/EquipmentPage"
 import CartPage from "../pages/CartPage"
 
 import React, { useEffect, useState } from "react"
 
-function Home() {
-  return <h2>Welcome!</h2>
-}
-
 function App() {
   const [coffeeListings, setCoffeeListings] = useState([])
   const [equipmentListings, setEquipmentListings] = useState([])
+  const [cartItems, setCartItems] = useState([])
   const [fetchTrigger, setFetchTrigger] = useState(false)
 
   const toggleFetchTrigger = () => setFetchTrigger(!fetchTrigger)
@@ -30,6 +28,12 @@ function App() {
       .then((data) => setEquipmentListings(data))
   }, [fetchTrigger])
 
+  useEffect(() => {
+    fetch("http://localhost:3001/cart")
+      .then((response) => response.json())
+      .then((data) => setCartItems(data))
+  }, [fetchTrigger])
+
   return (
     <Router>
       <div>
@@ -42,6 +46,7 @@ function App() {
                 coffeeListings={coffeeListings}
                 onAddCoffee={toggleFetchTrigger}
                 onDeleteCoffee={toggleFetchTrigger}
+                onAddToCart={toggleFetchTrigger}
               />
             }
           />
@@ -52,11 +57,20 @@ function App() {
                 equipmentListings={equipmentListings}
                 onAddEquipment={toggleFetchTrigger}
                 onDeleteEquipment={toggleFetchTrigger}
+                onAddToCart={toggleFetchTrigger}
               />
             }
           />
-          <Route path="/cart" element={<CartPage />} />
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/cart"
+            element={
+              <CartPage
+                cartItems={cartItems}
+                onAddToCart={toggleFetchTrigger}
+              />
+            }
+          />
+          <Route path="/" element={<HomePage />} />
         </Routes>
       </div>
     </Router>

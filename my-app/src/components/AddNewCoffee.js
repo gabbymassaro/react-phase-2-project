@@ -1,9 +1,11 @@
 import React, { useState } from "react"
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
+import { v4 as uuidv4 } from "uuid"
 
 const initialValue = {
   brand_name: "",
+  product_id: uuidv4(),
   category: "coffee",
   description: "",
   image: "",

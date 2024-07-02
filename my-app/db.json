@@ -1,280 +1,178 @@
 {
   "coffee": [
     {
-      "id": 3,
+      "id": "3",
+      "product_id": "1",
+      "product_type": "coffee",
       "brand_name": "Lavazza",
-      "category": "coffee",
       "description": "Lavazza Super Crema Whole Bean Coffee Blend, 2.2lb",
       "image": "https://m.media-amazon.com/images/I/51MMPznBM1L._AC_UL320_.jpg",
       "price": 23.99,
       "in_stock_qty": 10
     },
     {
-      "id": 5,
-      "brand_name": "Peet's Coffee",
-      "category": "coffee",
-      "description": "Peet's Coffee Major Dickason's Blend, Dark Roast, 1lb",
-      "image": "https://m.media-amazon.com/images/I/61n2JBS4HfL._AC_UL320_.jpg",
-      "price": 13.99,
-      "in_stock_qty": 8
-    },
-    {
-      "id": 7,
+      "id": "7",
+      "product_id": "2",
+      "product_type": "coffee",
       "brand_name": "Death Wish Coffee",
-      "category": "coffee",
       "description": "Death Wish Coffee Co. Whole Bean Coffee, 1lb",
       "image": "https://m.media-amazon.com/images/I/61+OtZZtI4L._AC_UL320_.jpg",
       "price": 19.99,
       "in_stock_qty": 12
     },
     {
-      "id": 9,
+      "id": "9",
+      "product_id": "3",
+      "product_type": "coffee",
       "brand_name": "Blue Bottle",
-      "category": "coffee",
       "description": "Blue Bottle Coffee, Bella Donovan, Whole Bean, 12oz",
       "image": "https://m.media-amazon.com/images/I/31vGBP7UAoL._AC_UL320_.jpg",
       "price": 18.99,
       "in_stock_qty": 6
     },
     {
-      "id": 11,
-      "brand_name": "Caribou Coffee",
-      "category": "coffee",
-      "description": "Caribou Coffee, Caribou Blend, Medium Roast, 12oz",
-      "image": "https://m.media-amazon.com/images/I/710vlkmq6wL._AC_UL320_.jpg",
-      "price": 9.99,
-      "in_stock_qty": 4
-    },
-    {
-      "id": 13,
+      "id": "13",
+      "product_id": "5",
+      "product_type": "coffee",
       "brand_name": "Stumptown",
-      "category": "coffee",
       "description": "Stumptown Coffee Roasters, Hair Bender, Whole Bean, 12oz",
       "image": "https://m.media-amazon.com/images/I/71Q129rCmuL._AC_UL320_.jpg",
       "price": 16.99,
       "in_stock_qty": 7
     },
     {
-      "id": 15,
+      "id": "15",
+      "product_id": "6",
+      "product_type": "coffee",
       "brand_name": "Intelligentsia",
-      "category": "coffee",
       "description": "Intelligentsia Coffee, Black Cat Classic Espresso, Whole Bean, 12oz",
       "image": "https://m.media-amazon.com/images/I/61ljzJa9oAL._AC_UL320_.jpg",
-      "price": 16.00,
+      "price": 16,
       "in_stock_qty": 6
     },
     {
-      "id": 17,
-      "brand_name": "Dunkin'",
-      "category": "coffee",
-      "description": "Dunkin' Original Blend Medium Roast Coffee, 1lb",
-      "image": "https://m.media-amazon.com/images/I/51+uDsp65dL._AC_UL320_.jpg",
-      "price": 8.99,
-      "in_stock_qty": 20
-    },
-    {
-      "id": 19,
-      "brand_name": "Philz Coffee",
-      "category": "coffee",
-      "description": "Philz Coffee, Tesora Blend, Whole Bean, 1lb",
-      "image": "https://m.media-amazon.com/images/I/31R5BZCqcvL._AC_UL320_.jpg",
-      "price": 19.95,
-      "in_stock_qty": 8
-    },
-    {
-      "id": 21,
-      "brand_name": "Gevalia",
-      "category": "coffee",
-      "description": "Gevalia House Blend Medium Roast Coffee, 1lb",
-      "image": "https://m.media-amazon.com/images/I/71ZGUXLpwML._AC_UL320_.jpg",
-      "price": 9.99,
-      "in_stock_qty": 12
-    },
-    {
-      "id": 23,
+      "id": "23",
+      "product_id": "9",
+      "product_type": "coffee",
       "brand_name": "Seattle's Best",
-      "category": "coffee",
       "description": "Seattle's Best Coffee, Post Alley Blend, 1lb",
       "image": "https://m.media-amazon.com/images/I/71speMYV5UL._AC_UL320_.jpg",
       "price": 8.49,
       "in_stock_qty": 10
     },
     {
-      "id": 25,
-      "brand_name": "Peet's Coffee",
-      "category": "coffee",
-      "description": "Peet's Coffee, French Roast, Dark Roast, 1lb",
-      "image": "https://m.media-amazon.com/images/I/61Ql2mABrfL._AC_UL320_.jpg",
-      "price": 13.99,
-      "in_stock_qty": 7
-    },
-    {
-      "id": 29,
+      "id": "29",
+      "product_id": "11",
+      "product_type": "coffee",
       "brand_name": "Bones Coffee",
-      "category": "coffee",
       "description": "Bones Coffee Company, Maple Bacon, Whole Bean, 1lb",
       "image": "https://m.media-amazon.com/images/I/71gM2UWsIoL._AC_UL320_.jpg",
       "price": 17.99,
       "in_stock_qty": 6
+    },
+    {
+      "id": "8ed3",
+      "product_id": "12",
+      "product_type": "coffee",
+      "brand_name": "Kitty Town Coffee",
+      "description": "Vanilla Buttercream, Whole Bean, 2lb",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ3e7lmv-6whYatLDdogxqzM9po9_u2Zlc6OyegD_oOt71Rfr6P9OpZyyoV6jtKrTojyaydMiRASL_Gv7-6Yc_9ULyirOrygxVSCe-I151IoIam8_AM_bhs&usqp=CAE",
+      "price": 28,
+      "in_stock_qty": 3
+    },
+    {
+      "id": "0d2f",
+      "product_id": "13",
+      "product_type": "coffee",
+      "brand_name": "Chamberlain Coffee",
+      "description": "Fluffy Lamb, Vanilla Cold Brew Blend 1lb",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTofqyra9ghC7MIYei3uNmKIJmCmHm9x9BRNVPh6bQ4BkiyvMqSWqcU_A4ZPNe0HFIt-6m5H2AT6FN-XUvespXpXKKisvIAlGQsXWgX43GvQtT3GOcnTfAh&usqp=CAE",
+      "price": 12,
+      "in_stock_qty": 5
+    },
+    {
+      "id": "4cbb",
+      "product_id": "4562",
+      "product_type": "coffee",
+      "brand_name": "Stone Street",
+      "description": "Blueberry Cobbler, Medium Roast, 1lb",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRMMVZY4EkTuQrx68ihP-9VchzAk03iMKbW-rJzmOGmtWk3kq1xPu0nVGXrGVdnQSLfSDA8uribEBPw-yeJGqxGrh7IEhifAzj8IL21RlM&usqp=CAE",
+      "price": 17.99,
+      "in_stock_qty": 4
+    },
+    {
+      "id": "acbb",
+      "product_id": "734",
+      "product_type": "coffee",
+      "brand_name": "Verve",
+      "description": "Medium Roast, Specialty Coffee, 1lb",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT-udGZBw38pEzKy1mU9Hg4ZXmZhnU9tMYsZIqBpmlA_xmQ0zoKzq168Ifz9tvNtnhabx9ykjJR1vRpvuNdTl1geEyIaQGoBhSBdCyFLo6ESMpwVd45eXJ8&usqp=CAE",
+      "price": 10,
+      "in_stock_qty": 1
     }
   ],
-  "equipment" : [
+  "equipment": [
     {
-      "id": 2,
+      "id": "2",
+      "product_id": "14",
+      "product_type": "equipment",
       "brand_name": "Breville",
-      "category": "equipment",
       "description": "Breville Barista Express Espresso Machine",
       "image": "https://m.media-amazon.com/images/I/71BvCt6eAFL._AC_UL320_.jpg",
       "price": 699.99,
       "in_stock_qty": 2
     },
     {
-      "id": 4,
-      "brand_name": "Hario",
-      "category": "equipment",
-      "description": "Hario V60 Ceramic Coffee Dripper",
-      "image": "https://m.media-amazon.com/images/I/51Wp-8q4A7L._AC_UL320_.jpg",
-      "price": 19.99,
-      "in_stock_qty": 15
-    },
-    {
-      "id": 6,
+      "id": "6",
+      "product_id": "16",
+      "product_type": "equipment",
       "brand_name": "Nespresso",
-      "category": "equipment",
       "description": "Nespresso VertuoPlus Coffee and Espresso Maker",
       "image": "https://m.media-amazon.com/images/I/71zI-ry-gXL._AC_UL320_.jpg",
       "price": 149.99,
       "in_stock_qty": 7
     },
     {
-      "id": 8,
+      "id": "8",
+      "product_id": "17",
+      "product_type": "equipment",
       "brand_name": "Chemex",
-      "category": "equipment",
+      "description": "Chemex Pour-Over Glass Coffeemaker",
+      "image": "https://m.media-amazon.com/images/I/51rEZwQAmqL._AC_UL320_.jpg",
+      "price": 44.99,
+      "in_stock_qty": 5
+    }
+  ],
+  "cart": [
+    {
+      "id": "5a5b",
+      "product_id": "16",
+      "product_type": "equipment",
+      "brand_name": "Nespresso",
+      "description": "Nespresso VertuoPlus Coffee and Espresso Maker",
+      "image": "https://m.media-amazon.com/images/I/71zI-ry-gXL._AC_UL320_.jpg",
+      "price": 149.99,
+      "in_stock_qty": 7
+    },
+    {
+      "id": "57f3",
+      "product_id": "17",
+      "product_type": "equipment",
+      "brand_name": "Chemex",
       "description": "Chemex Pour-Over Glass Coffeemaker",
       "image": "https://m.media-amazon.com/images/I/51rEZwQAmqL._AC_UL320_.jpg",
       "price": 44.99,
       "in_stock_qty": 5
     },
     {
-      "id": 10,
-      "brand_name": "AeroPress",
-      "category": "equipment",
-      "description": "AeroPress Coffee and Espresso Maker",
-      "image": "https://m.media-amazon.com/images/I/51mfYNtRCbL._AC_UL320_.jpg",
-      "price": 29.95,
-      "in_stock_qty": 9
-    },
-    {
-      "id": 12,
-      "brand_name": "Mr. Coffee",
-      "category": "equipment",
-      "description": "Mr. Coffee 12-Cup Coffee Maker",
-      "image": "https://m.media-amazon.com/images/I/71ZIcTLsheL._AC_UL320_.jpg",
-      "price": 24.99,
+      "id": "b0e5",
+      "product_id": "1",
+      "product_type": "coffee",
+      "brand_name": "Lavazza",
+      "description": "Lavazza Super Crema Whole Bean Coffee Blend, 2.2lb",
+      "image": "https://m.media-amazon.com/images/I/51MMPznBM1L._AC_UL320_.jpg",
+      "price": 23.99,
       "in_stock_qty": 10
-    },
-    {
-      "id": 14,
-      "brand_name": "Keurig",
-      "category": "equipment",
-      "description": "Keurig K-Classic Coffee Maker",
-      "image": "https://m.media-amazon.com/images/I/61wQb8IB8UL._AC_UL320_.jpg",
-      "price": 89.99,
-      "in_stock_qty": 3
-    },
-    {
-      "id": 16,
-      "brand_name": "OXO",
-      "category": "equipment",
-      "description": "OXO Brew 9 Cup Coffee Maker",
-      "image": "https://m.media-amazon.com/images/I/71dxDL0TaIL._AC_UL320_.jpg",
-      "price": 199.99,
-      "in_stock_qty": 2
-    },
-    {
-      "id": 18,
-      "brand_name": "Cuisinart",
-      "category": "equipment",
-      "description": "Cuisinart DCC-3200P1 Perfectemp Coffee Maker",
-      "image": "https://m.media-amazon.com/images/I/81ugZ2peAgL._AC_UL320_.jpg",
-      "price": 99.95,
-      "in_stock_qty": 4
-    },
-    {
-      "id": 20,
-      "brand_name": "DeLonghi",
-      "category": "equipment",
-      "description": "DeLonghi EC155 15 BAR Pump Espresso and Cappuccino Maker",
-      "image": "https://m.media-amazon.com/images/I/61ePiOAtrvL._AC_UL320_.jpg",
-      "price": 99.95,
-      "in_stock_qty": 5
-    },
-    {
-      "id": 22,
-      "brand_name": "Hamilton Beach",
-      "category": "equipment",
-      "description": "Hamilton Beach FlexBrew Single Serve Coffee Maker",
-      "image": "https://m.media-amazon.com/images/I/61nCUc7yCgL._AC_UL320_.jpg",
-      "price": 49.99,
-      "in_stock_qty": 6
-    },
-    {
-      "id": 24,
-      "brand_name": "Zojirushi",
-      "category": "equipment",
-      "description": "Zojirushi EC-DAC50 Zutto 5-Cup Drip Coffeemaker",
-      "image": "https://m.media-amazon.com/images/I/71mVeg95MxL._AC_UL320_.jpg",
-      "price": 72.99,
-      "in_stock_qty": 3
-    },
-    {
-      "id": 26,
-      "brand_name": "Technivorm",
-      "category": "equipment",
-      "description": "Technivorm Moccamaster 79112 KBT Coffee Brewer",
-      "image": "https://m.media-amazon.com/images/I/61RbUYu8rcL._AC_UL320_.jpg",
-      "price": 309.00,
-      "in_stock_qty": 2
-    },
-    {
-      "id": 28,
-      "brand_name": "Smeg",
-      "category": "equipment",
-      "description": "Smeg 50's Retro Style Aesthetic Drip Filter Coffee Machine",
-      "image": "https://m.media-amazon.com/images/I/51Mhz8zDVbL._AC_UL320_.jpg",
-      "price": 199.95,
-      "in_stock_qty": 4
-    },
-    {
-      "id": 30,
-      "brand_name": "Ninja",
-      "category": "equipment",
-      "description": "Ninja Hot and Cold Brewed System",
-      "image": "https://m.media-amazon.com/images/I/512uRjQwFIL._AC_UL320_.jpg",
-      "price": 229.99,
-      "in_stock_qty": 3
-    }
-  ],
-  "cart" : [
-    {
-      "id": 2,
-      "brand_name": "Breville",
-      "category": "equipment",
-      "description": "Breville Barista Express Espresso Machine",
-      "image": "https://m.media-amazon.com/images/I/71BvCt6eAFL._AC_UL320_.jpg",
-      "price": 699.99,
-      "in_stock_qty": 2
-    }
-  ],
-  "purchased" : [
-    {
-      "id": 2,
-      "brand_name": "Breville",
-      "category": "equipment",
-      "description": "Breville Barista Express Espresso Machine",
-      "image": "https://m.media-amazon.com/images/I/71BvCt6eAFL._AC_UL320_.jpg",
-      "price": 699.99,
-      "in_stock_qty": 2
     }
   ]
 }
