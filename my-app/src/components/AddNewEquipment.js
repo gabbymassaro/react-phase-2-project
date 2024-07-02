@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form"
 
 const initialValue = {
   brand_name: "",
+  product_id: "",
   category: "equipment",
   description: "",
   image: "",

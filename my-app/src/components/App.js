@@ -60,6 +60,7 @@ function App() {
                 equipmentListings={equipmentListings}
                 onAddEquipment={toggleFetchTrigger}
                 onDeleteEquipment={toggleFetchTrigger}
+                onAddToCart={toggleFetchTrigger}
               />
             }
           />

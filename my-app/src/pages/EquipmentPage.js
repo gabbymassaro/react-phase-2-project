@@ -9,6 +9,7 @@ function EquipmentPage({
   equipmentListings,
   onDeleteEquipment,
   onAddEquipment,
+  onAddToCart,
 }) {
   return (
     <>
@@ -22,6 +23,7 @@ function EquipmentPage({
                   <EquipmentCard
                     equipmentListing={equipmentListing}
                     onDeleteEquipment={onDeleteEquipment}
+                    onAddToCart={onAddToCart}
                   />
                 </div>
               </Col>

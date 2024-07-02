@@ -11,7 +11,7 @@ function CoffeeCard({ coffeeListing, onAddToCart, onDeleteCoffee }) {
       method: "DELETE",
     })
       .then((response) => response.json())
-      .then(() => onDeleteCoffee(id))
+      .then(onDeleteCoffee)
   }
 
   const handleAddToCart = () => {
