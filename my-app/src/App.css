@@ -73,6 +73,14 @@ body {
   background-color: #f6f7e8;
 }
 
+.delete-button {
+  width: 10%;
+}
+
 .cart-page{
   padding: 30px;
+}
+
+.add-new-form-button {
+  margin-top: 20px;
 }

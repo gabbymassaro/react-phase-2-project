@@ -27,7 +27,12 @@ function EquipmentCard({ equipmentListing, onDeleteEquipment, onAddToCart }) {
 
   return (
     <Card className="h-100">
-      <Button size="sm" variant="outline-danger" onClick={handleDelete}>
+      <Button
+        size="sm"
+        variant="dark"
+        className="delete-button"
+        onClick={handleDelete}
+      >
         X
       </Button>{" "}
       <div className="image-container">
