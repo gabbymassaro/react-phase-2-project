@@ -3,8 +3,9 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import { Container } from "react-bootstrap"
 import CartCard from "../components/CartCard"
+import Checkout from "../components/Checkout"
 
-function CartPage({ cartItems }) {
+function CartPage({ cartItems, coffeeListings, equipmentListings, updateQty }) {
   return (
     <>
       <Container fluid className="cart-page">
@@ -17,6 +18,12 @@ function CartPage({ cartItems }) {
             </Col>
           ))}
         </Row>
+        <Checkout
+          cartItems={cartItems}
+          coffeeListings={coffeeListings}
+          equipmentListings={equipmentListings}
+          updateQty={updateQty}
+        />
       </Container>
     </>
   )

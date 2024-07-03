@@ -66,7 +66,10 @@ function App() {
             element={
               <CartPage
                 cartItems={cartItems}
+                coffeeListings={coffeeListings}
+                equipmentListings={equipmentListings}
                 onAddToCart={toggleFetchTrigger}
+                updateQty={toggleFetchTrigger}
               />
             }
           />
