@@ -1,9 +1,13 @@
 import React from "react"
+import { Button } from "react-bootstrap"
 import Card from "react-bootstrap/Card"
 
-function CartCard({ cartItem: { description, image, price, in_stock_qty } }) {
+function CartCard({ cartItem: { description, image, price } }) {
   return (
     <Card className="h-100">
+      <Button size="sm" variant="dark" className="delete-button">
+        X
+      </Button>{" "}
       <div className="image-container">
         <Card.Img
           variant="top"

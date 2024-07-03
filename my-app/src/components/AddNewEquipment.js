@@ -48,7 +48,11 @@ function AddNewEquipment({ onAddEquipment }) {
   return (
     <>
       <div className="container">
-        <Button variant="dark" onClick={toggleFormTrigger}>
+        <Button
+          variant="secondary"
+          onClick={toggleFormTrigger}
+          className="add-new-form-button"
+        >
           Add New Equipment Listing
         </Button>
       </div>

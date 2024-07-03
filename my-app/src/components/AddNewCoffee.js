@@ -48,7 +48,11 @@ function AddNewCoffee({ onAddCoffee }) {
   return (
     <>
       <div className="container">
-        <Button variant="dark" onClick={toggleFormTrigger}>
+        <Button
+          variant="secondary"
+          onClick={toggleFormTrigger}
+          className="add-new-form-button"
+        >
           Add New Coffee Listing
         </Button>
       </div>
