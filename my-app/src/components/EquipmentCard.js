@@ -1,40 +1,18 @@
 import React from "react"
-import Button from "react-bootstrap/Button"
 import Card from "react-bootstrap/Card"
+import DeleteEquipment from "./DeleteEquipment"
+import AddEquipmentToCart from "./AddEquipmentToCart"
 import "../App.css"
 
 function EquipmentCard({ equipmentListing, onDeleteEquipment, onAddToCart }) {
   const { description, image, price, in_stock_qty } = equipmentListing
-  const { id, ...newCartItem } = equipmentListing
-
-  const handleDelete = () => {
-    fetch(`http://localhost:3001/equipment/${id}`, {
-      method: "DELETE",
-    })
-      .then((response) => response.json())
-      .then(onDeleteEquipment)
-  }
-
-  const handleAddToCart = () => {
-    fetch("http://localhost:3001/cart", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newCartItem),
-    }).then(onAddToCart)
-  }
 
   return (
     <Card className="h-100">
-      <Button
-        size="sm"
-        variant="dark"
-        className="delete-button"
-        onClick={handleDelete}
-      >
-        X
-      </Button>{" "}
+      <DeleteEquipment
+        onDeleteEquipment={onDeleteEquipment}
+        equipmentListing={equipmentListing}
+      />
       <div className="image-container">
         <Card.Img
           variant="top"
@@ -47,9 +25,10 @@ function EquipmentCard({ equipmentListing, onDeleteEquipment, onAddToCart }) {
         <Card.Text>
           Price: ${price} | Qty: {in_stock_qty}
         </Card.Text>
-        <Button size="sm" variant="primary" onClick={handleAddToCart}>
-          Add To Cart
-        </Button>
+        <AddEquipmentToCart
+          onAddToCart={onAddToCart}
+          equipmentListing={equipmentListing}
+        />
       </Card.Body>
     </Card>
   )

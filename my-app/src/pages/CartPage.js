@@ -5,7 +5,13 @@ import { Container } from "react-bootstrap"
 import CartCard from "../components/CartCard"
 import Checkout from "../components/Checkout"
 
-function CartPage({ cartItems, coffeeListings, equipmentListings, updateQty }) {
+function CartPage({
+  cartItems,
+  coffeeListings,
+  equipmentListings,
+  updateQty,
+  emptyCart,
+}) {
   return (
     <>
       <Container fluid className="cart-page">
@@ -23,6 +29,7 @@ function CartPage({ cartItems, coffeeListings, equipmentListings, updateQty }) {
           coffeeListings={coffeeListings}
           equipmentListings={equipmentListings}
           updateQty={updateQty}
+          emptyCart={emptyCart}
         />
       </Container>
     </>

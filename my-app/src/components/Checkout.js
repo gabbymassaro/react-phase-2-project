@@ -1,34 +1,20 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import { Button } from "react-bootstrap"
 import Row from "react-bootstrap/Row"
 
-function Checkout({ cartItems, updateQty }) {
-  const [coffeeListings, setCoffeeListings] = useState([])
-  const [equipmentListings, setEquipmentListings] = useState([])
-
+function Checkout({
+  cartItems,
+  updateQty,
+  coffeeListings,
+  equipmentListings,
+  emptyCart,
+}) {
   const allListings = [...coffeeListings, ...equipmentListings]
-
-  const fetchCoffeeListings = () => {
-    fetch("http://localhost:3001/coffee")
-      .then((response) => response.json())
-      .then((data) => setCoffeeListings(data))
-  }
-
-  const fetchEquipmentListings = () => {
-    fetch("http://localhost:3001/equipment")
-      .then((response) => response.json())
-      .then((data) => setEquipmentListings(data))
-  }
-
-  useEffect(() => {
-    fetchCoffeeListings()
-    fetchEquipmentListings()
-  }, [])
 
   const handleQuantity = () => {
     cartItems.forEach((cartItem) => {
       allListings.forEach((listing) => {
-        if (listing.id === cartItem.id) {
+        if (listing.id === cartItem.product_id) {
           fetch(`http://localhost:3001/${listing.product_type}/${listing.id}`, {
             method: "PATCH",
             headers: {
@@ -56,7 +42,7 @@ function Checkout({ cartItems, updateQty }) {
 
   const handleOnClick = () => {
     handleQuantity()
-    handleEmptyCart()
+    handleEmptyCart(emptyCart)
   }
 
   return (

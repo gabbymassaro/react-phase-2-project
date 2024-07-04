@@ -24,6 +24,26 @@ function App() {
     setCoffeeListings(coffeeListings.filter((item) => item.id !== id))
   }
 
+  function onAddEquipment(item) {
+    setEquipmentListings([...equipmentListings, item])
+  }
+
+  function onDeleteEquipment(id) {
+    setEquipmentListings(equipmentListings.filter((item) => item.id !== id))
+  }
+
+  function onAddCoffeeToCart(item) {
+    setCartItems([...cartItems, item])
+  }
+
+  function onAddEquipmentToCart(item) {
+    setCartItems([...cartItems, item])
+  }
+
+  function onEmptyCart() {
+    setCartItems([])
+  }
+
   useEffect(() => {
     fetch("http://localhost:3001/coffee")
       .then((response) => response.json())
@@ -48,7 +68,7 @@ function App() {
                 coffeeListings={coffeeListings}
                 onAddCoffee={onAddCoffee}
                 onDeleteCoffee={onDeleteCoffee}
-                onAddToCart={toggleFetchTrigger}
+                onAddToCart={onAddCoffeeToCart}
               />
             }
           />
@@ -57,9 +77,9 @@ function App() {
             element={
               <EquipmentPage
                 equipmentListings={equipmentListings}
-                onAddEquipment={toggleFetchTrigger}
-                onDeleteEquipment={toggleFetchTrigger}
-                onAddToCart={toggleFetchTrigger}
+                onAddEquipment={onAddEquipment}
+                onDeleteEquipment={onDeleteEquipment}
+                onAddToCart={onAddEquipmentToCart}
               />
             }
           />
@@ -70,7 +90,7 @@ function App() {
                 cartItems={cartItems}
                 coffeeListings={coffeeListings}
                 equipmentListings={equipmentListings}
-                onAddToCart={toggleFetchTrigger}
+                emptyCart={onEmptyCart}
                 updateQty={toggleFetchTrigger}
               />
             }

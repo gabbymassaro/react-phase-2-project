@@ -1,12 +1,10 @@
 import React, { useState } from "react"
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
-import { v4 as uuidv4 } from "uuid"
 
 const initialValue = {
   brand_name: "",
-  product_id: uuidv4(),
-  category: "equipment",
+  product_type: "equipment",
   description: "",
   image: "",
   price: "",
@@ -40,7 +38,10 @@ function AddNewEquipment({ onAddEquipment }) {
       },
       body: JSON.stringify(sanitizeFormData()),
     })
-      .then(onAddEquipment)
+      .then((response) => response.json())
+      .then((item) => {
+        onAddEquipment(item)
+      })
       .then(resetForm)
       .then(toggleFormTrigger)
   }

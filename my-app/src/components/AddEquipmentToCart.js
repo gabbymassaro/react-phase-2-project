@@ -1,8 +1,8 @@
 import React from "react"
 import Button from "react-bootstrap/Button"
 
-function AddCoffeeToCart({ coffeeListing, onAddToCart }) {
-  const { id, ...newCartItem } = coffeeListing
+function AddEquipmentToCart({ onAddToCart, equipmentListing }) {
+  const { id, ...newCartItem } = equipmentListing
 
   const handleAddToCart = () => {
     fetch("http://localhost:3001/cart", {
@@ -17,6 +17,7 @@ function AddCoffeeToCart({ coffeeListing, onAddToCart }) {
         onAddToCart(item)
       })
   }
+
   return (
     <Button size="sm" variant="primary" onClick={handleAddToCart}>
       Add To Cart
@@ -24,4 +25,4 @@ function AddCoffeeToCart({ coffeeListing, onAddToCart }) {
   )
 }
 
-export default AddCoffeeToCart
+export default AddEquipmentToCart
