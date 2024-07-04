@@ -28,7 +28,7 @@ function Checkout({ cartItems, updateQty }) {
   const handleQuantity = () => {
     cartItems.forEach((cartItem) => {
       allListings.forEach((listing) => {
-        if (listing.product_id === cartItem.product_id) {
+        if (listing.id === cartItem.id) {
           fetch(`http://localhost:3001/${listing.product_type}/${listing.id}`, {
             method: "PATCH",
             headers: {
