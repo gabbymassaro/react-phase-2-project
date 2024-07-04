@@ -1,19 +1,12 @@
 import React from "react"
 import Button from "react-bootstrap/Button"
 import Card from "react-bootstrap/Card"
+import DeleteCoffee from "./DeleteCoffee"
 import "../App.css"
 
 function CoffeeCard({ coffeeListing, onAddToCart, onDeleteCoffee }) {
   const { description, image, price, in_stock_qty } = coffeeListing
   const { id, ...newCartItem } = coffeeListing
-
-  const handleDelete = () => {
-    fetch(`http://localhost:3001/coffee/${id}`, {
-      method: "DELETE",
-    })
-      .then((response) => response.json())
-      .then(onDeleteCoffee)
-  }
 
   const handleAddToCart = () => {
     fetch("http://localhost:3001/cart", {
@@ -27,14 +20,10 @@ function CoffeeCard({ coffeeListing, onAddToCart, onDeleteCoffee }) {
 
   return (
     <Card className="h-100">
-      <Button
-        size="sm"
-        variant="dark"
-        className="delete-button"
-        onClick={handleDelete}
-      >
-        X
-      </Button>{" "}
+      <DeleteCoffee
+        onDeleteCoffee={onDeleteCoffee}
+        coffeeListing={coffeeListing}
+      />
       <div className="image-container">
         <Card.Img
           variant="top"

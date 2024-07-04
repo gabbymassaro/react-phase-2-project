@@ -16,19 +16,21 @@ function App() {
 
   const toggleFetchTrigger = () => setFetchTrigger(!fetchTrigger)
 
+  function onAddCoffee(item) {
+    setCoffeeListings([...coffeeListings, item])
+  }
+
+  function onDeleteCoffee(id) {
+    setCoffeeListings(coffeeListings.filter((item) => item.id !== id))
+  }
+
   useEffect(() => {
     fetch("http://localhost:3001/coffee")
       .then((response) => response.json())
       .then((data) => setCoffeeListings(data))
-  }, [fetchTrigger])
-
-  useEffect(() => {
     fetch("http://localhost:3001/equipment")
       .then((response) => response.json())
       .then((data) => setEquipmentListings(data))
-  }, [fetchTrigger])
-
-  useEffect(() => {
     fetch("http://localhost:3001/cart")
       .then((response) => response.json())
       .then((data) => setCartItems(data))
@@ -44,8 +46,8 @@ function App() {
             element={
               <CoffeePage
                 coffeeListings={coffeeListings}
-                onAddCoffee={toggleFetchTrigger}
-                onDeleteCoffee={toggleFetchTrigger}
+                onAddCoffee={onAddCoffee}
+                onDeleteCoffee={onDeleteCoffee}
                 onAddToCart={toggleFetchTrigger}
               />
             }

@@ -40,7 +40,9 @@ function AddNewCoffee({ onAddCoffee }) {
       },
       body: JSON.stringify(sanitizeFormData()),
     })
-      .then(onAddCoffee)
+      .then(() => {
+        onAddCoffee(sanitizeFormData())
+      })
       .then(resetForm)
       .then(toggleFormTrigger)
   }
