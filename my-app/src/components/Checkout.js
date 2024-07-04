@@ -25,7 +25,7 @@ function Checkout({ cartItems, updateQty }) {
     fetchEquipmentListings()
   }, [])
 
-  const handleClick = () => {
+  const handleQuantity = () => {
     cartItems.forEach((cartItem) => {
       allListings.forEach((listing) => {
         if (listing.product_id === cartItem.product_id) {
@@ -43,9 +43,25 @@ function Checkout({ cartItems, updateQty }) {
     })
   }
 
+  const handleEmptyCart = () => {
+    cartItems.forEach((cartItem) => {
+      fetch(`http://localhost:3001/cart/${cartItem.id}`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+    })
+  }
+
+  const handleOnClick = () => {
+    handleQuantity()
+    handleEmptyCart()
+  }
+
   return (
     <Row>
-      <Button onClick={handleClick}>Checkout</Button>
+      <Button onClick={handleOnClick}>Checkout</Button>
     </Row>
   )
 }
