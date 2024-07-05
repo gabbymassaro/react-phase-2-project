@@ -2,7 +2,7 @@ import React from "react"
 import Button from "react-bootstrap/Button"
 import "../App.css"
 
-function DeleteCoffee({ listing, onDelete }) {
+function DeleteButton({ lisitng, onDelete }) {
   const { id, product_type } = listing
 
   const handleDelete = () => {
@@ -27,4 +27,4 @@ function DeleteCoffee({ listing, onDelete }) {
   )
 }
 
-export default DeleteCoffee
+export default DeleteButton
