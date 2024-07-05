@@ -42,27 +42,18 @@ function App() {
   }
 
   function updateStockQty(id, product_type, newStockQty) {
-    if (product_type === "coffee") {
-      setCoffeeListings((prevListing) =>
-        prevListing.map((item) => {
-          if (item.id === id) {
-            return { ...item, in_stock_qty: newStockQty }
-          } else {
-            return item
-          }
-        })
-      )
-    } else {
-      setEquipmentListings((prevListing) =>
-        prevListing.map((item) => {
-          if (item.id === id) {
-            return { ...item, in_stock_qty: newStockQty }
-          } else {
-            return item
-          }
-        })
-      )
-    }
+    const updateQty =
+      product_type === "coffee" ? setCoffeeListings : setEquipmentListings
+
+    updateQty((prevListing) =>
+      prevListing.map((item) => {
+        if (item.id === id) {
+          return { ...item, in_stock_qty: newStockQty }
+        } else {
+          return item
+        }
+      })
+    )
   }
 
   function onEmptyCart() {
@@ -84,7 +75,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Navigation />
+        <Navigation cartItems={cartItems} />
         <Routes>
           <Route
             path="/coffee"

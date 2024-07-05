@@ -4,9 +4,9 @@ import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons"
+import { faCartShopping, faCartPlus } from "@fortawesome/free-solid-svg-icons"
 
-function Navigation() {
+function Navigation({ cartItems }) {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -31,7 +31,14 @@ function Navigation() {
           </Nav>
           <Nav>
             <Nav.Link as={Link} to="./cart">
-              <FontAwesomeIcon icon={faCartShopping} />
+              {cartItems.length === 0 ? (
+                <FontAwesomeIcon icon={faCartShopping} />
+              ) : (
+                <FontAwesomeIcon
+                  icon={faCartPlus}
+                  style={{ color: "#e36154" }}
+                />
+              )}
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
