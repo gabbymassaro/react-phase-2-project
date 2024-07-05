@@ -8,7 +8,7 @@ function CoffeeCard({ coffeeListing, onAddToCart, onDeleteCoffee }) {
   const { description, image, price, in_stock_qty } = coffeeListing
 
   return (
-    <Card className="h-100">
+    <Card className="card-container">
       <DeleteCoffee
         onDeleteCoffee={onDeleteCoffee}
         coffeeListing={coffeeListing}

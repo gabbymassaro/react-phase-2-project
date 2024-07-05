@@ -8,7 +8,7 @@ function EquipmentCard({ equipmentListing, onDeleteEquipment, onAddToCart }) {
   const { description, image, price, in_stock_qty } = equipmentListing
 
   return (
-    <Card className="h-100">
+    <Card className="card-container">
       <DeleteEquipment
         onDeleteEquipment={onDeleteEquipment}
         equipmentListing={equipmentListing}

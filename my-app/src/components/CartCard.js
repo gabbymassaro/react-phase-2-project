@@ -1,6 +1,7 @@
 import React from "react"
 import Card from "react-bootstrap/Card"
 import RemoveFromCart from "./RemoveFromCart"
+import "../App.css"
 
 function CartCard({ cartItem, onDeleteCartItem }) {
   const { description, image, price } = cartItem
