@@ -1,6 +1,5 @@
 import React from "react"
 import Card from "react-bootstrap/Card"
-import DeleteCoffee from "./DeleteCoffee"
 import AddCoffeeToCart from "./AddCoffeeToCart"
 import DeleteButton from "./DeleteButton"
 import "../App.css"
@@ -10,8 +9,7 @@ function CoffeeCard({ coffeeListing, onAddToCart, onDeleteCoffee }) {
 
   return (
     <Card className="card-container">
-      <DeleteCoffee onDelete={onDeleteCoffee} listing={coffeeListing} />
-      <DeleteButton />
+      <DeleteButton onDelete={onDeleteCoffee} listing={coffeeListing} />
       <div className="image-container">
         <Card.Img
           variant="top"

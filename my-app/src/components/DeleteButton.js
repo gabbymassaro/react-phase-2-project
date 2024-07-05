@@ -2,7 +2,7 @@ import React from "react"
 import Button from "react-bootstrap/Button"
 import "../App.css"
 
-function DeleteButton({ lisitng, onDelete }) {
+function DeleteButton({ listing, onDelete }) {
   const { id, product_type } = listing
 
   const handleDelete = () => {
