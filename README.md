@@ -27,7 +27,7 @@ Slightly Spooky Coffee Co. is a mock ecommerce application that allows users to 
 - Add new listings to the page.
 - Delete items from either the listings or cart.
 - Proceed to Checkout!
-- You can navigate back to the home page by clicking in the logo in the navbar.
+- You can navigate back to the home page by clicking on the logo in the navbar.
 
 ## Credits
 - This app was created by Gabriella Massaro.
