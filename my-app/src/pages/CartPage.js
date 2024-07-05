@@ -5,7 +5,14 @@ import { Container } from "react-bootstrap"
 import CartCard from "../components/CartCard"
 import Checkout from "../components/Checkout"
 
-function CartPage({ cartItems, coffeeListings, equipmentListings, updateQty }) {
+function CartPage({
+  cartItems,
+  coffeeListings,
+  equipmentListings,
+  updateQty,
+  emptyCart,
+  onDeleteCartItem,
+}) {
   return (
     <>
       <Container fluid className="cart-page">
@@ -13,7 +20,10 @@ function CartPage({ cartItems, coffeeListings, equipmentListings, updateQty }) {
           {cartItems.map((cartItem) => (
             <Col key={cartItem.id} md={3}>
               <div className="row-container">
-                <CartCard cartItem={cartItem} />
+                <CartCard
+                  cartItem={cartItem}
+                  onDeleteCartItem={onDeleteCartItem}
+                />
               </div>
             </Col>
           ))}
@@ -23,6 +33,7 @@ function CartPage({ cartItems, coffeeListings, equipmentListings, updateQty }) {
           coffeeListings={coffeeListings}
           equipmentListings={equipmentListings}
           updateQty={updateQty}
+          emptyCart={emptyCart}
         />
       </Container>
     </>

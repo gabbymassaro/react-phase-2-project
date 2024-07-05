@@ -14,28 +14,26 @@ function CoffeePage({
   onAddToCart,
 }) {
   return (
-    <>
-      <div className="coffee-page">
-        <div className="container">
-          <AddNewCoffee onAddCoffee={onAddCoffee} />
-          <Container fluid>
-            <Row>
-              {coffeeListings.map((coffeeListing) => (
-                <Col key={coffeeListing.id} md={3}>
-                  <div className="row-container">
-                    <CoffeeCard
-                      coffeeListing={coffeeListing}
-                      onDeleteCoffee={onDeleteCoffee}
-                      onAddToCart={onAddToCart}
-                    />
-                  </div>
-                </Col>
-              ))}
-            </Row>
-          </Container>
-        </div>
+    <div className="coffee-page">
+      <div className="container">
+        <AddNewCoffee onAddCoffee={onAddCoffee} />
+        <Container fluid>
+          <Row>
+            {coffeeListings.map((coffeeListing) => (
+              <Col key={coffeeListing.id} md={3}>
+                <div className="row-container">
+                  <CoffeeCard
+                    coffeeListing={coffeeListing}
+                    onDeleteCoffee={onDeleteCoffee}
+                    onAddToCart={onAddToCart}
+                  />
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </Container>
       </div>
-    </>
+    </div>
   )
 }
 

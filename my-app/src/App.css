@@ -2,11 +2,29 @@ body {
   background-color: #424344;
 }
 
+.home-page{
+  color: #f6f7e8;
+  font-family: 'Cinzel', serif;
+}
+
+.welcome-paragraph{
+  width: 60%;
+}
+
+.cart-page{
+  padding: 30px;
+}
+
+.card-container{
+  height: 400px;
+}
+
 .card-img-top {
   height: 200px;
   padding: 20px;
   object-fit: cover;
 }
+
 .image-container {
   display: flex;
   justify-content: center;
@@ -29,37 +47,12 @@ body {
   margin-bottom: 20px;
 }
 
-.coffee-page {
-  background-color: #424344;
-  height: 100%;
-}
-
-.equipment-page {
-  background-color: #424344;
-}
-
-#listing-form {
-  padding: 10px;
-  background-color: #424344;
-}
-
 .circle-logo{
   border-radius: 50px;
 }
 
-.home-page{
-  background-color: #424344;
-  height: 100vh;
-  color: #f6f7e8;
-  font-family: 'Cinzel', serif;
-}
-
 .header-container{
   padding: 20px;
-}
-
-.welcome-paragraph{
-  width: 60%;
 }
 
 .carousel-img {
@@ -69,16 +62,8 @@ body {
   object-fit: cover;
 }
 
-.h-100{
-  background-color: #f6f7e8;
-}
-
 .delete-button {
   width: 10%;
-}
-
-.cart-page{
-  padding: 30px;
 }
 
 .add-new-form-button {

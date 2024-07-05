@@ -1,178 +1,151 @@
 {
   "coffee": [
     {
-      "id": "3",
-      "product_id": "1",
-      "product_type": "coffee",
-      "brand_name": "Lavazza",
-      "description": "Lavazza Super Crema Whole Bean Coffee Blend, 2.2lb",
-      "image": "https://m.media-amazon.com/images/I/51MMPznBM1L._AC_UL320_.jpg",
-      "price": 23.99,
-      "in_stock_qty": 10
-    },
-    {
-      "id": "7",
-      "product_id": "2",
-      "product_type": "coffee",
-      "brand_name": "Death Wish Coffee",
-      "description": "Death Wish Coffee Co. Whole Bean Coffee, 1lb",
-      "image": "https://m.media-amazon.com/images/I/61+OtZZtI4L._AC_UL320_.jpg",
-      "price": 19.99,
-      "in_stock_qty": 12
-    },
-    {
-      "id": "9",
-      "product_id": "3",
-      "product_type": "coffee",
-      "brand_name": "Blue Bottle",
-      "description": "Blue Bottle Coffee, Bella Donovan, Whole Bean, 12oz",
-      "image": "https://m.media-amazon.com/images/I/31vGBP7UAoL._AC_UL320_.jpg",
-      "price": 18.99,
-      "in_stock_qty": 6
-    },
-    {
-      "id": "13",
-      "product_id": "5",
-      "product_type": "coffee",
-      "brand_name": "Stumptown",
-      "description": "Stumptown Coffee Roasters, Hair Bender, Whole Bean, 12oz",
-      "image": "https://m.media-amazon.com/images/I/71Q129rCmuL._AC_UL320_.jpg",
-      "price": 16.99,
-      "in_stock_qty": 7
-    },
-    {
-      "id": "15",
-      "product_id": "6",
-      "product_type": "coffee",
-      "brand_name": "Intelligentsia",
-      "description": "Intelligentsia Coffee, Black Cat Classic Espresso, Whole Bean, 12oz",
-      "image": "https://m.media-amazon.com/images/I/61ljzJa9oAL._AC_UL320_.jpg",
-      "price": 16,
-      "in_stock_qty": 6
-    },
-    {
-      "id": "23",
-      "product_id": "9",
-      "product_type": "coffee",
-      "brand_name": "Seattle's Best",
-      "description": "Seattle's Best Coffee, Post Alley Blend, 1lb",
-      "image": "https://m.media-amazon.com/images/I/71speMYV5UL._AC_UL320_.jpg",
-      "price": 8.49,
-      "in_stock_qty": 10
-    },
-    {
       "id": "29",
-      "product_id": "11",
       "product_type": "coffee",
       "brand_name": "Bones Coffee",
       "description": "Bones Coffee Company, Maple Bacon, Whole Bean, 1lb",
       "image": "https://m.media-amazon.com/images/I/71gM2UWsIoL._AC_UL320_.jpg",
       "price": 17.99,
-      "in_stock_qty": 6
+      "in_stock_qty": 8
     },
     {
-      "id": "8ed3",
-      "product_id": "12",
+      "id": "12d4",
+      "brand_name": "Bones Coffee Company",
       "product_type": "coffee",
-      "brand_name": "Kitty Town Coffee",
-      "description": "Vanilla Buttercream, Whole Bean, 2lb",
-      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ3e7lmv-6whYatLDdogxqzM9po9_u2Zlc6OyegD_oOt71Rfr6P9OpZyyoV6jtKrTojyaydMiRASL_Gv7-6Yc_9ULyirOrygxVSCe-I151IoIam8_AM_bhs&usqp=CAE",
-      "price": 28,
-      "in_stock_qty": 3
+      "description": "Cookies 'N Dreams Ground Gourmet Coffee 12oz",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR_D7cEbKPxSllgNUM8GY-A65sEQgo04zMiGGw9NQncCvDgZFMytYmfoUN7aCGBdLVU89AQscI1mzEuUSfIYQ5kFb9irAtBFm8C39s08NqCiGaCGGZsgnc99w&usqp=CAE",
+      "price": 15.99,
+      "in_stock_qty": 2
     },
     {
-      "id": "0d2f",
-      "product_id": "13",
+      "id": "a344",
+      "brand_name": "SightSeer",
       "product_type": "coffee",
-      "brand_name": "Chamberlain Coffee",
-      "description": "Fluffy Lamb, Vanilla Cold Brew Blend 1lb",
-      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTofqyra9ghC7MIYei3uNmKIJmCmHm9x9BRNVPh6bQ4BkiyvMqSWqcU_A4ZPNe0HFIt-6m5H2AT6FN-XUvespXpXKKisvIAlGQsXWgX43GvQtT3GOcnTfAh&usqp=CAE",
-      "price": 12,
+      "description": "Space Cowboy, Light-Medium Roast, 1lb Whole Bean",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ3o2WWttp-l70n7SY6ulsOHox2-qeCFa0l1CO2_OA5-xBQS-By2X4gD8Li_TVcDbkeZ9vsb1gExiFrpVZay0F-XpRzSY5uslTiIEN1RLa1LOfNTI2qTm_A164&usqp=CAE",
+      "price": 12.99,
       "in_stock_qty": 5
     },
     {
-      "id": "4cbb",
-      "product_id": "4562",
+      "id": "a668",
+      "brand_name": "Manatee Gourmet Coffee",
       "product_type": "coffee",
-      "brand_name": "Stone Street",
-      "description": "Blueberry Cobbler, Medium Roast, 1lb",
-      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRMMVZY4EkTuQrx68ihP-9VchzAk03iMKbW-rJzmOGmtWk3kq1xPu0nVGXrGVdnQSLfSDA8uribEBPw-yeJGqxGrh7IEhifAzj8IL21RlM&usqp=CAE",
-      "price": 17.99,
+      "description": "Paradise Vanilla, 12oz Ground ",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS3SLoBLTBKKBG0SWYuOeCeZsV43_G31XiwZtlNHKDq_kTl7m9cGVdcQLXqBhvxRP32Wsfs2Oc7dt7HaV9BMva737iOFqNX7XY0zrmPR0zSAKyvxc0VCZR3q7HbB8qFG3vb0bLLGQ&usqp=CAc",
+      "price": 12,
       "in_stock_qty": 4
     },
     {
-      "id": "acbb",
-      "product_id": "734",
+      "id": "60e0",
+      "brand_name": "HUCK",
       "product_type": "coffee",
-      "brand_name": "Verve",
-      "description": "Medium Roast, Specialty Coffee, 1lb",
-      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT-udGZBw38pEzKy1mU9Hg4ZXmZhnU9tMYsZIqBpmlA_xmQ0zoKzq168Ifz9tvNtnhabx9ykjJR1vRpvuNdTl1geEyIaQGoBhSBdCyFLo6ESMpwVd45eXJ8&usqp=CAE",
-      "price": 10,
-      "in_stock_qty": 1
+      "description": "Blue Orchid Blend, Whole Bean 12oz",
+      "image": "https://www.drinktrade.com/cdn/shop/files/fx5wsgvhewumsp6lpn4u.png?v=1704953748&width=2258",
+      "price": 46,
+      "in_stock_qty": 6
+    },
+    {
+      "id": "2a85",
+      "brand_name": "Sightglass",
+      "product_type": "coffee",
+      "description": "Blueboon, Organic Whole Bean Coffee, 10.9oz",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRacVocCIwJJGbnsvFegzK08zp9C_ojsThxGO-T8HgCMWvnFl7GL3eKbsoquu8xtYyj_Hl2TulwEta1DkzzeUCmWJbgmu61NU2-yxVj_EC5OibgptIeWmGLMA&usqp=CAE",
+      "price": 15.75,
+      "in_stock_qty": 3
+    },
+    {
+      "id": "8573",
+      "brand_name": "PERC",
+      "product_type": "coffee",
+      "description": "Honduras La Esmeralda, White Chocolate & Twizzlers, 16oz",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSTOvpbXlsA1kI_vX1WLnxJNeCJv2335JgcxIz9e-lxIL0nVbDS4UZl-RwKAhJT3jImxgMNoURvoYDo5GqEmlkPc3wCr0x9-nhqfN1bGiZGM-6Rbnr1o7eLZE8&usqp=CAE",
+      "price": 46,
+      "in_stock_qty": 3
+    },
+    {
+      "id": "9af9",
+      "brand_name": "Tony's Coffee",
+      "product_type": "coffee",
+      "description": "Crew Brew Blend, Whole Bean 12oz",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS7oiW_fO_5mwLWRAiE4xNYXYZSrGgIFDDSlWOzsXTVT6iPxniaVv4eNkZXZismgzyiHcYXPH_4PdK_cuT1Ar89vh3Vw8CYUWg8BKfAkN6-t57FLVmW869U&usqp=CAE",
+      "price": 16,
+      "in_stock_qty": 20
     }
   ],
   "equipment": [
     {
       "id": "2",
-      "product_id": "14",
       "product_type": "equipment",
       "brand_name": "Breville",
       "description": "Breville Barista Express Espresso Machine",
       "image": "https://m.media-amazon.com/images/I/71BvCt6eAFL._AC_UL320_.jpg",
       "price": 699.99,
-      "in_stock_qty": 2
-    },
-    {
-      "id": "6",
-      "product_id": "16",
-      "product_type": "equipment",
-      "brand_name": "Nespresso",
-      "description": "Nespresso VertuoPlus Coffee and Espresso Maker",
-      "image": "https://m.media-amazon.com/images/I/71zI-ry-gXL._AC_UL320_.jpg",
-      "price": 149.99,
-      "in_stock_qty": 7
+      "in_stock_qty": 1
     },
     {
       "id": "8",
-      "product_id": "17",
       "product_type": "equipment",
       "brand_name": "Chemex",
       "description": "Chemex Pour-Over Glass Coffeemaker",
       "image": "https://m.media-amazon.com/images/I/51rEZwQAmqL._AC_UL320_.jpg",
       "price": 44.99,
-      "in_stock_qty": 5
-    }
-  ],
-  "cart": [
-    {
-      "id": "5a5b",
-      "product_id": "16",
-      "product_type": "equipment",
-      "brand_name": "Nespresso",
-      "description": "Nespresso VertuoPlus Coffee and Espresso Maker",
-      "image": "https://m.media-amazon.com/images/I/71zI-ry-gXL._AC_UL320_.jpg",
-      "price": 149.99,
-      "in_stock_qty": 7
+      "in_stock_qty": 10
     },
     {
-      "id": "57f3",
-      "product_id": "17",
+      "id": "561e",
+      "brand_name": "Greater Goods",
       "product_type": "equipment",
-      "brand_name": "Chemex",
-      "description": "Chemex Pour-Over Glass Coffeemaker",
-      "image": "https://m.media-amazon.com/images/I/51rEZwQAmqL._AC_UL320_.jpg",
-      "price": 44.99,
-      "in_stock_qty": 5
+      "description": "Digital Scale",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS9WX4yv-KSXc1jWq3G-VilHIt8_e1WrZBI0THcxe2BPWmhf9V0PWoCGhxXohGbM0nhN0c8Xl53hn7RM85-DuC_HlFXGXO4xbi8T04VXIqSMG_1DpiAvQI4&usqp=CAE",
+      "price": 27.99,
+      "in_stock_qty": -6
     },
     {
-      "id": "b0e5",
-      "product_id": "1",
-      "product_type": "coffee",
-      "brand_name": "Lavazza",
-      "description": "Lavazza Super Crema Whole Bean Coffee Blend, 2.2lb",
-      "image": "https://m.media-amazon.com/images/I/51MMPznBM1L._AC_UL320_.jpg",
-      "price": 23.99,
+      "id": "80c6",
+      "brand_name": "Fellow Stagg EKG",
+      "product_type": "equipment",
+      "description": "Electric Kettle in StoneBlue/Walnut",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTtpXICJnXfj-xnlHuZ18pKXmNFC6g-qWqEUKynY52A-kfmNuLGuzTb3moT6CAZ8OsqItXxfbmjRMHRzE6Y0-zW5VG1wgYrbiAmWlNYRyeqJI6P1iqMkLSb8w&usqp=CAE",
+      "price": 195,
+      "in_stock_qty": 1
+    },
+    {
+      "id": "d931",
+      "brand_name": "Subminimal",
+      "product_type": "equipment",
+      "description": "FlowTip Latte Art Milk Jug",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQC1ZkkYdIOGTGMzzZUkXRa8Z8484zvQFkCruFCF2XaRzldWx7xiqeVILNfhZ_L_O4u30Bt85YyJTNCzyF2gJXVN2tfRohqpEQX0xuxwm2JsDxWtbXgGWU7&usqp=CAE",
+      "price": 39,
+      "in_stock_qty": 2
+    },
+    {
+      "id": "b59f",
+      "brand_name": "Grosche",
+      "product_type": "equipment",
+      "description": "Milano Stone, Stovetop Espresso Maker, Moka Pot",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQFJkQ0uEO0YxVpKVYDIlmHFg6zJ2osKwYbW23uFdklm4jdIFC8h9y3TYV4Rsv37MH-kbD9zGFV2DW9FlX7jyXkrclPsCHzGkpLWePU2i5LizrOIJgIUr-B&usqp=CAE",
+      "price": 50,
+      "in_stock_qty": 2
+    },
+    {
+      "id": "859f",
+      "brand_name": "RISHI",
+      "product_type": "equipment",
+      "description": "Bamboo Matcha Tea Whisk",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRTlwp7wWaW2C15L1GQl_I_1UrCzxFgeQOEEi6qrXr98cAMswHSVw4hYcN2QrNU3pNleA0yx8LPa_2ahXBzsaOJPbV7UegCNTH3stqCY5YppQwvweQsv1gF&usqp=CAE",
+      "price": 15,
+      "in_stock_qty": 6
+    },
+    {
+      "id": "7aa4",
+      "brand_name": "Blue Bottle",
+      "product_type": "equipment",
+      "description": "Fellow Atmos Vacuum Canister",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRVqgn-tds4bVZutMHZK3u0kLYzavs3q-nJ2Y15giHb6WkduMobKqLXULZ-qtK7qGOH5x2T-bN-qQHGHLqc2w-J6um5SO4NYKyGEA7TXZCp207os_vAY3fIxzU&usqp=CAE",
+      "price": 40,
       "in_stock_qty": 10
     }
-  ]
+  ],
+  "cart": []
 }

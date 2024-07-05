@@ -12,27 +12,74 @@ function App() {
   const [coffeeListings, setCoffeeListings] = useState([])
   const [equipmentListings, setEquipmentListings] = useState([])
   const [cartItems, setCartItems] = useState([])
-  const [fetchTrigger, setFetchTrigger] = useState(false)
 
-  const toggleFetchTrigger = () => setFetchTrigger(!fetchTrigger)
+  function onAddCoffee(item) {
+    setCoffeeListings([...coffeeListings, item])
+  }
+
+  function onDeleteCoffee(id) {
+    setCoffeeListings(coffeeListings.filter((item) => item.id !== id))
+  }
+
+  function onAddEquipment(item) {
+    setEquipmentListings([...equipmentListings, item])
+  }
+
+  function onDeleteEquipment(id) {
+    setEquipmentListings(equipmentListings.filter((item) => item.id !== id))
+  }
+
+  function onAddCoffeeToCart(item) {
+    setCartItems([...cartItems, item])
+  }
+
+  function onAddEquipmentToCart(item) {
+    setCartItems([...cartItems, item])
+  }
+
+  function onDeleteCartItem(id) {
+    setCartItems(cartItems.filter((item) => item.id !== id))
+  }
+
+  function updateStockQty(id, product_type, newStockQty) {
+    if (product_type === "coffee") {
+      setCoffeeListings((prevListing) =>
+        prevListing.map((item) => {
+          if (item.id === id) {
+            return { ...item, in_stock_qty: newStockQty }
+          } else {
+            return item
+          }
+        })
+      )
+    } else {
+      setEquipmentListings((prevListing) =>
+        prevListing.map((item) => {
+          if (item.id === id) {
+            return { ...item, in_stock_qty: newStockQty }
+          } else {
+            return item
+          }
+        })
+      )
+    }
+  }
+
+  function onEmptyCart() {
+    setCartItems([])
+  }
 
   useEffect(() => {
     fetch("http://localhost:3001/coffee")
       .then((response) => response.json())
       .then((data) => setCoffeeListings(data))
-  }, [fetchTrigger])
-
-  useEffect(() => {
     fetch("http://localhost:3001/equipment")
       .then((response) => response.json())
       .then((data) => setEquipmentListings(data))
-  }, [fetchTrigger])
-
-  useEffect(() => {
     fetch("http://localhost:3001/cart")
       .then((response) => response.json())
       .then((data) => setCartItems(data))
-  }, [fetchTrigger])
+  }, [])
 
   return (
     <Router>
@@ -44,9 +91,9 @@ function App() {
             element={
               <CoffeePage
                 coffeeListings={coffeeListings}
-                onAddCoffee={toggleFetchTrigger}
-                onDeleteCoffee={toggleFetchTrigger}
-                onAddToCart={toggleFetchTrigger}
+                onAddCoffee={onAddCoffee}
+                onDeleteCoffee={onDeleteCoffee}
+                onAddToCart={onAddCoffeeToCart}
               />
             }
           />
@@ -55,9 +102,9 @@ function App() {
             element={
               <EquipmentPage
                 equipmentListings={equipmentListings}
-                onAddEquipment={toggleFetchTrigger}
-                onDeleteEquipment={toggleFetchTrigger}
-                onAddToCart={toggleFetchTrigger}
+                onAddEquipment={onAddEquipment}
+                onDeleteEquipment={onDeleteEquipment}
+                onAddToCart={onAddEquipmentToCart}
               />
             }
           />
@@ -68,8 +115,9 @@ function App() {
                 cartItems={cartItems}
                 coffeeListings={coffeeListings}
                 equipmentListings={equipmentListings}
-                onAddToCart={toggleFetchTrigger}
-                updateQty={toggleFetchTrigger}
+                onDeleteCartItem={onDeleteCartItem}
+                emptyCart={onEmptyCart}
+                updateQty={updateStockQty}
               />
             }
           />

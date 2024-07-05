@@ -1,13 +1,13 @@
 import React from "react"
-import { Button } from "react-bootstrap"
 import Card from "react-bootstrap/Card"
+import RemoveFromCart from "./RemoveFromCart"
+import "../App.css"
 
-function CartCard({ cartItem: { description, image, price } }) {
+function CartCard({ cartItem, onDeleteCartItem }) {
+  const { description, image, price } = cartItem
   return (
     <Card className="h-100">
-      <Button size="sm" variant="dark" className="delete-button">
-        X
-      </Button>{" "}
+      <RemoveFromCart cartItem={cartItem} onDeleteCartItem={onDeleteCartItem} />
       <div className="image-container">
         <Card.Img
           variant="top"
