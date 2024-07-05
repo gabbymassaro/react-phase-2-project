@@ -1,6 +1,6 @@
 import React from "react"
 import Card from "react-bootstrap/Card"
-import DeleteEquipment from "./DeleteEquipment"
+import DeleteButton from "./DeleteButton"
 import AddEquipmentToCart from "./AddEquipmentToCart"
 import "../App.css"
 
@@ -9,10 +9,7 @@ function EquipmentCard({ equipmentListing, onDeleteEquipment, onAddToCart }) {
 
   return (
     <Card className="card-container">
-      <DeleteEquipment
-        onDeleteEquipment={onDeleteEquipment}
-        equipmentListing={equipmentListing}
-      />
+      <DeleteButton onDelete={onDeleteEquipment} listing={equipmentListing} />
       <div className="image-container">
         <Card.Img
           variant="top"
