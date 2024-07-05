@@ -23,7 +23,13 @@ function Checkout({
             body: JSON.stringify({
               in_stock_qty: listing.in_stock_qty - 1,
             }),
-          }).then(updateQty)
+          }).then(() => {
+            updateQty(
+              listing.id,
+              listing.product_type,
+              listing.in_stock_qty - 1
+            )
+          })
         }
       })
     })
@@ -38,11 +44,12 @@ function Checkout({
         },
       })
     })
+    emptyCart()
   }
 
   const handleOnClick = () => {
     handleQuantity()
-    handleEmptyCart(emptyCart)
+    handleEmptyCart()
   }
 
   return (

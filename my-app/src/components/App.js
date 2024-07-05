@@ -12,9 +12,6 @@ function App() {
   const [coffeeListings, setCoffeeListings] = useState([])
   const [equipmentListings, setEquipmentListings] = useState([])
   const [cartItems, setCartItems] = useState([])
-  const [fetchTrigger, setFetchTrigger] = useState(false)
-
-  const toggleFetchTrigger = () => setFetchTrigger(!fetchTrigger)
 
   function onAddCoffee(item) {
     setCoffeeListings([...coffeeListings, item])
@@ -44,6 +41,30 @@ function App() {
     setCartItems(cartItems.filter((item) => item.id !== id))
   }
 
+  function updateStockQty(id, product_type, newStockQty) {
+    if (product_type === "coffee") {
+      setCoffeeListings((prevListing) =>
+        prevListing.map((item) => {
+          if (item.id === id) {
+            return { ...item, in_stock_qty: newStockQty }
+          } else {
+            return item
+          }
+        })
+      )
+    } else {
+      setEquipmentListings((prevListing) =>
+        prevListing.map((item) => {
+          if (item.id === id) {
+            return { ...item, in_stock_qty: newStockQty }
+          } else {
+            return item
+          }
+        })
+      )
+    }
+  }
+
   function onEmptyCart() {
     setCartItems([])
   }
@@ -58,7 +79,7 @@ function App() {
     fetch("http://localhost:3001/cart")
       .then((response) => response.json())
       .then((data) => setCartItems(data))
-  }, [fetchTrigger])
+  }, [])
 
   return (
     <Router>
@@ -96,7 +117,7 @@ function App() {
                 equipmentListings={equipmentListings}
                 onDeleteCartItem={onDeleteCartItem}
                 emptyCart={onEmptyCart}
-                updateQty={toggleFetchTrigger}
+                updateQty={updateStockQty}
               />
             }
           />
