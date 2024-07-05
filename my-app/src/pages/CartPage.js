@@ -11,6 +11,7 @@ function CartPage({
   equipmentListings,
   updateQty,
   emptyCart,
+  onDeleteCartItem,
 }) {
   return (
     <>
@@ -19,7 +20,10 @@ function CartPage({
           {cartItems.map((cartItem) => (
             <Col key={cartItem.id} md={3}>
               <div className="row-container">
-                <CartCard cartItem={cartItem} />
+                <CartCard
+                  cartItem={cartItem}
+                  onDeleteCartItem={onDeleteCartItem}
+                />
               </div>
             </Col>
           ))}

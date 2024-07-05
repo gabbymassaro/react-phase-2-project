@@ -40,6 +40,10 @@ function App() {
     setCartItems([...cartItems, item])
   }
 
+  function onDeleteCartItem(id) {
+    setCartItems(cartItems.filter((item) => item.id !== id))
+  }
+
   function onEmptyCart() {
     setCartItems([])
   }
@@ -90,6 +94,7 @@ function App() {
                 cartItems={cartItems}
                 coffeeListings={coffeeListings}
                 equipmentListings={equipmentListings}
+                onDeleteCartItem={onDeleteCartItem}
                 emptyCart={onEmptyCart}
                 updateQty={toggleFetchTrigger}
               />
