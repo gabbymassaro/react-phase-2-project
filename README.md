@@ -14,6 +14,7 @@ Slightly Spooky Coffee Co. is a mock ecommerce application that allows users to 
 
 ## Set Up
 - Clone this repository `$git clone git@github.com:gabbymassaro/react-phase-2-project.git`
+- CD into the `my_app` file
 - Run `$npm install`
 - If you have not done so before: Run `$npm install -g json-server` 
 - Run `json-server -p 3001 --watch db.json` to start the server.
