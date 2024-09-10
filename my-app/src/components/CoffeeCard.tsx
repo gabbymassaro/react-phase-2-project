@@ -4,7 +4,7 @@ import AddCoffeeToCart from "./AddCoffeeToCart"
 import DeleteButton from "./DeleteButton"
 import "../App.css"
 
-function CoffeeCard({ coffeeListing, onAddToCart, onDeleteCoffee }) {
+const CoffeeCard: React.FC = (coffeeListing, onAddToCart, onDeleteCoffee) => {
   const { description, image, price, in_stock_qty } = coffeeListing
 
   return (

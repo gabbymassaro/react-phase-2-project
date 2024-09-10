@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCartShopping, faCartPlus } from "@fortawesome/free-solid-svg-icons"
 
-function Navigation({ cartItems }) {
+const Navigation: React.FC = (cartItems) => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>

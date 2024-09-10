@@ -11,7 +11,7 @@ const initialValue = {
   in_stock_qty: "",
 }
 
-function AddNewCoffee({ onAddCoffee }) {
+const AddNewCoffee: React.FC = (onAddCoffee) => {
   const [formData, setFormData] = useState(initialValue)
   const [toggleForm, setToggleForm] = useState(false)
 

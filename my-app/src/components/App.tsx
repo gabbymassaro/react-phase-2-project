@@ -8,6 +8,7 @@ import CartPage from "../pages/CartPage"
 
 import React, { useEffect, useState } from "react"
 
+
 function App() {
   const [coffeeListings, setCoffeeListings] = useState([])
   const [equipmentListings, setEquipmentListings] = useState([])

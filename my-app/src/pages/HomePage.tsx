@@ -2,7 +2,7 @@ import React from "react"
 import { Container } from "react-bootstrap"
 import Carousel from "react-bootstrap/Carousel"
 
-function HomePage() {
+const HomePage: React.FC = () => {
   return (
     <div className="home-page">
       <Container className="header-container">

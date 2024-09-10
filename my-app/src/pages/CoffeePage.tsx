@@ -7,12 +7,12 @@ import CoffeeCard from "../components/CoffeeCard"
 
 import "../App.css"
 
-function CoffeePage({
+const CoffeePage: React.FC = (
   coffeeListings,
   onAddCoffee,
   onDeleteCoffee,
   onAddToCart,
-}) {
+) => {
   return (
     <div className="coffee-page">
       <div className="container">
