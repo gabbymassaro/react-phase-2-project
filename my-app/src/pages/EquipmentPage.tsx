@@ -5,12 +5,12 @@ import AddNewEquipment from "../components/AddNewEquipment"
 import EquipmentCard from "../components/EquipmentCard"
 import { Container } from "react-bootstrap"
 
-function EquipmentPage({
+const EquipmentPage: React.FC = ({
   equipmentListings,
   onDeleteEquipment,
   onAddEquipment,
   onAddToCart,
-}) {
+}) => {
   return (
     <div className="equipment-page">
       <div className="container">

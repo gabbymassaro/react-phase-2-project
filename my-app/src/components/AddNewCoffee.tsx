@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { FormEventHandler, useState } from "react"
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
 
@@ -29,8 +29,8 @@ const AddNewCoffee: React.FC = (onAddCoffee) => {
     in_stock_qty: Number(formData.in_stock_qty),
   })
 
-  const handleSubmit = (event) => {
-    event.preventDefault()
+  const handleSubmit = (e: SubmitEvent) => {
+    e.preventDefault()
     fetch("http://localhost:3001/coffee", {
       method: "POST",
       headers: {
