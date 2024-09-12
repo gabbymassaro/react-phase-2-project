@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
 
 export const AddNewCoffee = ({ onAddCoffee }) => {
-  const { register, handleSubmit, control } = useForm({
+  const { register, handleSubmit, control, reset } = useForm({
     defaultValues: {
       brand_name: "",
       product_type: "coffee",
@@ -30,6 +30,7 @@ export const AddNewCoffee = ({ onAddCoffee }) => {
       .then((response) => response.json())
       .then((newItem) => {
         onAddCoffee(newItem)
+        reset()
       })
       .then(() => {
         toggleFormTrigger()
@@ -98,8 +99,9 @@ export const AddNewCoffee = ({ onAddCoffee }) => {
               id="price"
               placeholder="19.99"
               {...register("price", {
+                valueAsNumber: true,
                 required: {
-                  valueAsNumber: true,
+                  value: true,
                   message: "Price is required",
                 },
               })}
@@ -112,8 +114,9 @@ export const AddNewCoffee = ({ onAddCoffee }) => {
               id="in_stock_qty"
               placeholder="5"
               {...register("in_stock_qty", {
+                valueAsNumber: true,
                 required: {
-                  valueAsNumber: true,
+                  value: true,
                   message: "Quantity is required",
                 },
               })}
