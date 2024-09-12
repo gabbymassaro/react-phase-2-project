@@ -111,12 +111,13 @@ export const AddNewCoffee: React.FC<AddNewCoffeeProps> = ({ onAddCoffee }) => {
               type="number"
               id="price"
               placeholder="19.99"
+              step="0.01"
               {...register("price", {
                 valueAsNumber: true,
                 required: {
                   value: true,
                   message: "Price is required",
-                },
+                }
               })}
             />
             <p className="error">{errors.price?.message}</p>

@@ -44,6 +44,15 @@
       "image": "https://www.drinktrade.com/cdn/shop/files/fx5wsgvhewumsp6lpn4u.png?v=1704953748&width=2258",
       "price": 46,
       "in_stock_qty": 6
+    },
+    {
+      "id": "fda3",
+      "brand_name": "Top of The Mornin'",
+      "product_type": "coffee",
+      "description": "Midnight Oil Dark Roast Coffee",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRRDM4gI_b2LiMG8b-QXMddm0LAcW5Xf58jrGBtXVMwDGAdZEwANv53I7vHsUJBqQ1xVWkiEbJNMM2NNhw5xpKDl5Xj2w1bXrox4PvvKi19keAJBh165SYPmw",
+      "price": 14,
+      "in_stock_qty": 6
     }
   ],
   "equipment": [
