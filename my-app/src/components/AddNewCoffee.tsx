@@ -23,8 +23,8 @@ export const AddNewCoffee: React.FC<AddNewCoffeeProps> = ({ onAddCoffee }) => {
       product_type: "coffee",
       description: "",
       image: "",
-      price: 0,
-      in_stock_qty: 0,
+      price: undefined,
+      in_stock_qty: undefined,
     },
   })
 
