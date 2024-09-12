@@ -17,8 +17,8 @@ function App() {
     setCoffeeListings([...coffeeListings, item])
   }
 
-  function onDeleteCoffee(id) {
-    setCoffeeListings(coffeeListings.filter((item) => item.id !== id))
+  function onDeleteCoffee(listing) {
+    setCoffeeListings(coffeeListings.filter((item) => item.id !== listing.id))
   }
 
   function onAddEquipment(item) {

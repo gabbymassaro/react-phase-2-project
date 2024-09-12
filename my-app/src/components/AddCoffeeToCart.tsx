@@ -2,7 +2,21 @@ import React, { useState } from "react"
 import Toast from "react-bootstrap/Toast"
 import Button from "react-bootstrap/Button"
 
-function AddCoffeeToCart({ coffeeListing, onAddToCart }) {
+interface CoffeeListing {
+  id?: number;
+  description: string;
+  image: string;
+  price: number;
+  in_stock_qty: number;
+  product_type: string;
+}
+
+interface AddCoffeeToCartProps {
+  coffeeListing: CoffeeListing;
+  onAddToCart: (coffee: CoffeeListing) => void;
+}
+
+export const AddCoffeeToCart: React.FC<AddCoffeeToCartProps> = ({ coffeeListing, onAddToCart }) => {
   const { id, ...newCartItem } = coffeeListing
   const [show, setShow] = useState(false)
 
