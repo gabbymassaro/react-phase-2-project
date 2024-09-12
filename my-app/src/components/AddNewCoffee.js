@@ -94,12 +94,12 @@ export const AddNewCoffee = ({ onAddCoffee }) => {
 
             <Form.Label htmlFor="price"></Form.Label>
             <Form.Control
-              type="text"
+              type="number"
               id="price"
               placeholder="19.99"
               {...register("price", {
                 required: {
-                  value: true,
+                  valueAsNumber: true,
                   message: "Price is required",
                 },
               })}
@@ -108,12 +108,12 @@ export const AddNewCoffee = ({ onAddCoffee }) => {
 
             <Form.Label htmlFor="in_stock_qty"></Form.Label>
             <Form.Control
-              type="text"
+              type="number"
               id="in_stock_qty"
               placeholder="5"
               {...register("in_stock_qty", {
                 required: {
-                  value: true,
+                  valueAsNumber: true,
                   message: "Quantity is required",
                 },
               })}
