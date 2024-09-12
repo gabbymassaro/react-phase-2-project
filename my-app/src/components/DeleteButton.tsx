@@ -2,7 +2,21 @@ import React from "react"
 import Button from "react-bootstrap/Button"
 import "../App.css"
 
-function DeleteButton({ listing, onDelete }) {
+interface Listing {
+  id?: number;
+  description: string;
+  product_type: string;
+  image: string;
+  price: number;
+  in_stock_qty: number;
+}
+
+interface DeleteButtonProps {
+  listing: Listing;
+  onDelete: (listing: Listing) => void;
+}
+
+export const DeleteButton: React.FC<DeleteButtonProps> = ({ listing, onDelete }) => {
   const { id, product_type } = listing
 
   const handleDelete = () => {
@@ -11,7 +25,7 @@ function DeleteButton({ listing, onDelete }) {
     })
       .then((response) => response.json())
       .then(() => {
-        onDelete(id)
+        onDelete(listing)
       })
   }
 

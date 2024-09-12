@@ -4,7 +4,22 @@ import AddCoffeeToCart from "./AddCoffeeToCart"
 import DeleteButton from "./DeleteButton"
 import "../App.css"
 
-function CoffeeCard({ coffeeListing, onAddToCart, onDeleteCoffee }) {
+interface CoffeeListing {
+  id?: number;
+  description: string;
+  image: string;
+  price: number;
+  in_stock_qty: number;
+  product_type: string;
+}
+
+interface CoffeeCardProps {
+  coffeeListing: CoffeeListing;
+  onAddToCart: (coffee: CoffeeListing) => void;
+  onDeleteCoffee: (coffee: CoffeeListing) => void;
+}
+
+export const CoffeeCard: React.FC<CoffeeCardProps> = ({ coffeeListing, onAddToCart, onDeleteCoffee }) => {
   const { description, image, price, in_stock_qty } = coffeeListing
 
   return (

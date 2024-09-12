@@ -1,17 +1,30 @@
 import React, { useState } from "react"
-import { useForm, useFormState } from "react-hook-form"
+import { SubmitHandler, useForm, useFormState } from "react-hook-form"
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
 
-export const AddNewCoffee = ({ onAddCoffee }) => {
-  const { register, handleSubmit, control, reset } = useForm({
+type FormValues = {
+  brand_name: string
+  product_type: string
+  description: string
+  image: string
+  price: number
+  in_stock_qty: number
+}
+
+interface AddNewCoffeeProps {
+  onAddCoffee: (data: FormValues) => void;
+}
+
+export const AddNewCoffee: React.FC<AddNewCoffeeProps> = ({ onAddCoffee }) => {
+  const { register, handleSubmit, control, reset } = useForm<FormValues>({
     defaultValues: {
       brand_name: "",
       product_type: "coffee",
       description: "",
       image: "",
-      price: "",
-      in_stock_qty: "",
+      price: 0,
+      in_stock_qty: 0,
     },
   })
 
@@ -19,7 +32,7 @@ export const AddNewCoffee = ({ onAddCoffee }) => {
   const [toggleForm, setToggleForm] = useState(false)
   const toggleFormTrigger = () => setToggleForm(!toggleForm)
 
-  const onSubmit = (data) => {
+  const onSubmit: SubmitHandler<FormValues> = (data) => {
     fetch("http://localhost:3001/coffee", {
       method: "POST",
       headers: {
