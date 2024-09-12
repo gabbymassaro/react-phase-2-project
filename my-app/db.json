@@ -71,6 +71,15 @@
       "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS7oiW_fO_5mwLWRAiE4xNYXYZSrGgIFDDSlWOzsXTVT6iPxniaVv4eNkZXZismgzyiHcYXPH_4PdK_cuT1Ar89vh3Vw8CYUWg8BKfAkN6-t57FLVmW869U&usqp=CAE",
       "price": 16,
       "in_stock_qty": 20
+    },
+    {
+      "id": "e5b5",
+      "brand_name": "Test",
+      "product_type": "coffee",
+      "description": "This is a test",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTY6WoISLKuNh2NecUfjhs1NIy5lhbUSLGjg5NHsltgJhWjtZNdqMOYV0dhRyXmjsrCVYoIvbcDXkOeQmq5FQt8mXdsGKjEoHRGZq87c5weLviH8CvSvv3qhg",
+      "price": 12.99,
+      "in_stock_qty": 3
     }
   ],
   "equipment": [
