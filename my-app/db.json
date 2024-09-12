@@ -44,33 +44,6 @@
       "image": "https://www.drinktrade.com/cdn/shop/files/fx5wsgvhewumsp6lpn4u.png?v=1704953748&width=2258",
       "price": 46,
       "in_stock_qty": 6
-    },
-    {
-      "id": "2a85",
-      "brand_name": "Sightglass",
-      "product_type": "coffee",
-      "description": "Blueboon, Organic Whole Bean Coffee, 10.9oz",
-      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRacVocCIwJJGbnsvFegzK08zp9C_ojsThxGO-T8HgCMWvnFl7GL3eKbsoquu8xtYyj_Hl2TulwEta1DkzzeUCmWJbgmu61NU2-yxVj_EC5OibgptIeWmGLMA&usqp=CAE",
-      "price": 15.75,
-      "in_stock_qty": 3
-    },
-    {
-      "id": "8573",
-      "brand_name": "PERC",
-      "product_type": "coffee",
-      "description": "Honduras La Esmeralda, White Chocolate & Twizzlers, 16oz",
-      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSTOvpbXlsA1kI_vX1WLnxJNeCJv2335JgcxIz9e-lxIL0nVbDS4UZl-RwKAhJT3jImxgMNoURvoYDo5GqEmlkPc3wCr0x9-nhqfN1bGiZGM-6Rbnr1o7eLZE8&usqp=CAE",
-      "price": 46,
-      "in_stock_qty": 3
-    },
-    {
-      "id": "9af9",
-      "brand_name": "Tony's Coffee",
-      "product_type": "coffee",
-      "description": "Crew Brew Blend, Whole Bean 12oz",
-      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS7oiW_fO_5mwLWRAiE4xNYXYZSrGgIFDDSlWOzsXTVT6iPxniaVv4eNkZXZismgzyiHcYXPH_4PdK_cuT1Ar89vh3Vw8CYUWg8BKfAkN6-t57FLVmW869U&usqp=CAE",
-      "price": 16,
-      "in_stock_qty": 20
     }
   ],
   "equipment": [

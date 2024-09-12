@@ -26,6 +26,7 @@ export const DeleteButton: React.FC<DeleteButtonProps> = ({ listing, onDelete })
       .then((response) => response.json())
       .then(() => {
         onDelete(listing)
+        console.log(listing)
       })
   }
 
