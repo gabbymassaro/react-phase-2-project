@@ -1,10 +1,10 @@
 import React, { useState } from "react"
-import { useForm } from "react-hook-form"
+import { useForm, useFormState } from "react-hook-form"
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
 
 export const AddNewCoffee = ({ onAddCoffee }) => {
-  const { register, handleSubmit } = useForm({
+  const { register, handleSubmit, control } = useForm({
     defaultValues: {
       brand_name: "",
       product_type: "coffee",
@@ -15,13 +15,9 @@ export const AddNewCoffee = ({ onAddCoffee }) => {
     },
   })
 
-  const [formData, setFormData] = useState([])
+  const { errors } = useFormState({ control })
   const [toggleForm, setToggleForm] = useState(false)
   const toggleFormTrigger = () => setToggleForm(!toggleForm)
-
-  const handleChange = ({ target: { name, value } }) => {
-    setFormData({ ...formData, [name]: value })
-  }
 
   const onSubmit = (data) => {
     fetch("http://localhost:3001/coffee", {
@@ -65,9 +61,8 @@ export const AddNewCoffee = ({ onAddCoffee }) => {
                   message: "Brand Name is required",
                 },
               })}
-              onChange={handleChange}
             />
-            {/* <p className="error">{errors.brand_name?.message}</p> */}
+            <p className="error">{errors.brand_name?.message}</p>
 
             <Form.Label htmlFor="description"></Form.Label>
             <Form.Control
@@ -80,9 +75,9 @@ export const AddNewCoffee = ({ onAddCoffee }) => {
                   message: "Description Name is required",
                 },
               })}
-              onChange={handleChange}
             />
-            {/* <p className="error">{errors.description?.message}</p> */}
+            <p className="error">{errors.description?.message}</p>
+
             <Form.Label htmlFor="image"></Form.Label>
             <Form.Control
               type="text"
@@ -94,9 +89,9 @@ export const AddNewCoffee = ({ onAddCoffee }) => {
                   message: "Image is required",
                 },
               })}
-              onChange={handleChange}
             />
-            {/* <p className="error">{errors.image?.message}</p> */}
+            <p className="error">{errors.image?.message}</p>
+
             <Form.Label htmlFor="price"></Form.Label>
             <Form.Control
               type="text"
@@ -108,9 +103,9 @@ export const AddNewCoffee = ({ onAddCoffee }) => {
                   message: "Price is required",
                 },
               })}
-              onChange={handleChange}
             />
-            {/* <p className="error">{errors.price?.message}</p> */}
+            <p className="error">{errors.price?.message}</p>
+
             <Form.Label htmlFor="in_stock_qty"></Form.Label>
             <Form.Control
               type="text"
@@ -122,9 +117,9 @@ export const AddNewCoffee = ({ onAddCoffee }) => {
                   message: "Quantity is required",
                 },
               })}
-              onChange={handleChange}
             />
-            {/* <p className="error">{errors.in_stock_qty?.message}</p> */}
+            <p className="error">{errors.in_stock_qty?.message}</p>
+
             <br></br>
             <div className="d-grid gap-2">
               <Button variant="primary" type="submit">
